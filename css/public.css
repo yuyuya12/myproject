@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,dl,dd,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+body{font:12px  "宋体"; word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none} 
+fieldset ,a img,.bor0 {border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;}
+table{border-collapse:collapse;}
+.ind2{text-indent:2em;}
+
+
+/*溢出隐藏出现省略号*/
+.over{
+	white-space:nowrap;/*强制不换行*/
+	overflow:hidden;/*溢出:隐藏*/
+	text-overflow:ellipsis;/*溢出隐藏时出现省略号*/	
+	width: 80%;
+    margin: 0 auto;
+}
+
+/*水平垂直对齐*/
+.valign{text-align:center;}
+.valign img{vertical-align:middle;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;height:100%;}
+
+
+.clear:before{content:"";display:table;}/*margin-top:向上传递问题*/
+.clear:after{content:"";clear:both;display:block;}/*清除浮动*/
+
+.cc{display:flex;justify-content:center;align-items:center;}
+.xc{display:flex;justify-content:center;}
+.yc{display:flex;align-items:center;}
+
+.site-header-fixed {
+	left: 50%; top: 0px !important; margin-left: -570px; position: fixed !important; z-index: 1000;
+	}
+
+
+.back-top {
+	right: 0px; bottom: 150px; margin-left: 555px; position: fixed; z-index: 99;
+}
+.back-top li {
+	background: rgb(255, 255, 255); margin: -1px 0px; border: 1px solid rgb(188, 188, 188); transition:0.3s; border-image: none; width: 42px; height: 42px; text-align: center; line-height: 42px;
+}
+.back-top li .backShow {
+	display: none;
+}
+.back-top li:hover {
+	background: rgb(237, 28, 36); padding: 7px 3px; line-height: 13px; font-size: 12px;
+}
+.back-top li:hover a {
+	color: rgb(255, 255, 255);
+}
+.back-top li .glyphicon {
+	font-size: 20px; margin-top: 8px; display: inline-block;
+}
+.back-top li .glyphicon-kefu {
+	background: url("../images/kefu.jpg") no-repeat 0% 0% / 100% 100%; width: 25px; height: 25px;
+}
+.back-top li .glyphicon-kefu::before {
+	content: "";
+}

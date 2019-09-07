@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>康佳</title>
+    <link href="../libs/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/public2.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../jq/jquery.js"></script>
+
+    <!-- <script src="../jq/index.js"></script> -->
+    <!-- <script  src="../jq/nav-top.js"></script> -->
+
+</head>
+
+<body>
+
+    <div class="back-top">
+        <ul>
+
+            <li class="kefu"><a href="javascript:void(0)" style="cursor:hand" target="_blank"><span
+                        class="glyphicon glyphicon-headphones glyphicon-kefu"></span> <span
+                        class="backShow">购买咨询</span></a></li>
+            <li><a href="#"> <span class="backShow">售后服务</span></a></li>
+            <li><a href="/cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span
+                        class="backShow">购物车</span></a></li>
+            <li id="the-top" style="display: none;"><a href="javascript:;"><span
+                        class="glyphicon glyphicon-plane"></span> <span class="backShow">回到顶部</span></a></li>
+        </ul>
+    </div>
+    <script>
+
+
+    </script>
+    <section id="top">
+        <!-- <div class="margin"> -->
+        <div class="top-l">
+            <a href="#">康佳新闻</a>
+            <span>|</span>
+            <a href="#">加入康佳</a>
+            <span>|</span>
+            <a href="#">校园招聘</a>
+            <span>|</span>
+            <a href="#">康佳社区</a>
+            <span>|</span>
+            <a href="#">大宗采购</a>
+            <span>|</span>
+            <a href="#">积分商城</a>
+            <span>|</span>
+
+
+        </div>
+        <div class="top-r">
+            <a href="#">登录</a>
+            <span>|</span>
+            <a href="#">注册</a>
+            <span>|</span>
+            <div class="car">
+                <a href="#" class="iconImg">
+                    <!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+                    <img class="top-header-cart"
+                        src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?vee99">
+                    购物车(<span class="cart-num">0</span>)
+                    <span class="sp-num" style="display:none"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- </div> -->
+    </section>
+    <nav>
+        <div class="nav-top yc">
+            <div class="logoImg yc"><a href="#"><img
+                        src="https://www.konka.com/themes/pc/konka/images/logo.png?vee99"></a>
+                    </div>
+                      <div class="nav-block">
+            <ul class="u1">
+             <li class="l1"><a href="#">首页</a></li>
+                <li class="l1"><a href="#">电视</a></li>
+                <li class="l1"><a href="#">冰箱</a></li>
+                <li class="l1"><a href="#">洗衣机</a></li>
+                <li class="l1"><a href="#">生活电器</a></li>
+                <li class="l1"><a href="#">厨卫电器</a></li>
+                <li class="l1"><a href="#">智能硬件</a></li>
+                <li class="l1"><a href="#">K迷优品</a></li>
+                <li class="l1"><a href="#">大宗采购</a></li>
+                <li class="l1"><a href="#">服务</a></li>
+               <li class="l1"> <div class="searchimg "><a href="#">
+
+                    <img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?vee99">
+                </a>
+            </div>
+            </li>
+            </ul>
+        </div>
+        
+            <div class="nav-block search" >
+                <form >
+                    <div class="search-wrapper">
+                        <button class="search-search">
+                            <!-- <span class="glyphicon glyphicon-search"></span> -->
+                            <img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?v16d2">
+                        </button>
+                        <input type="text" name="keyword" class="inputSearch" placeholder="您喜欢的商品" autocomplete="off">
+                        <input type="text" class="search-close" value="X">
+                  
+                           
+                        
+                    </div>
+                    <!-- <aside class="search-content">
+                        <section class="search-con-frame">
+                            <ul id="animateUl">
+                                <li><a href="#">电视</a></li>
+                                <li><a href="#">冰箱</a></li>
+                                <li><a href="#">洗衣机</a></li>
+                                <li><a href="#">手机</a></li>
+                                <li><a href="#">49X7</a></li>
+                                <li><a href="#">A2</a></li>
+                                <li><a href="#">OLED</a></li>
+                            </ul>
+                        </section>
+                    </aside> -->
+                </form>
+            </div>
+        </div>
+<script>
+$(".searchimg").on('click',function(event){
+  event.stopPropagation();
+  $('.nav .u1').fadeOut(600);
+  $('.search').fadeIn(600);
+});
+
+// $("inputSearch").on('click',function(event){
+//   event.stopPropagation();
+ 
+//   $("search-content").find("#animateUl").fadeIn(600);;
+// });
+
+//X关闭
+$('.search-close').on('click',function(){
+ searchShow();
+  return false;
+});
+//  //阻止文本框的冒泡
+// $('.inputSearch').on('click',function(event){
+//   event.stopPropagation();
+// })
+// //任意元素关闭
+// $(document).on('click',function(event){
+//   searchShow();
+// });
+function searchShow(){
+  $('.search').fadeOut(300);
+  $('nav .l1').fadeIn(1000);
+};
+
+
+</script>
+      
+
+
+    </nav>
+    <script >
+        var navTop = $('.nav-top').offset().top;
+        $(window).scroll(function () {
+            //滚动条的滚动距离
+            var scrTop = $(window).scrollTop();
+            if (scrTop >= navTop) {
+                $('.nav-top').addClass('site-header-fixed')
+            } else {
+                $('.nav-top').removeClass('site-header-fixed')
+            }
+
+        });
+    </script>
+    <section id="banner">
+        <div class="lunbo">
+            <div class="item te">
+                <a href="#" target="_blank"><img
+                        src="https://www.konka.com/public/images/6b/90/9a/38d8bd41ec3f3f16ead9e19397487ad3e7f5c1a9.jpg?71283_OW1920_OH500"></a>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank"><img
+                        src="https://www.konka.com/public/images/0b/78/4b/b3ecf68adf0811ba8be67de5a23c66f06c141d85.gif?54107_OW1920_OH500"></a>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank"><img
+                        src="https://www.konka.com/public/images/08/86/1d/cffda840bcce2f9c629ce120dd3d5e8b728a5404.jpg?32163_OW1920_OH500"></a>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank"><img
+                        src="https://www.konka.com/public/images/b1/08/58/716b48144c4f6a3e03cd13069208e9cd3d14b224.jpg?61935_OW1920_OH500"></a>
+            </div>
+            <div class="item">
+                <a href="#" target="_blank"><img
+                        src="https://www.konka.com/public/images/d0/02/ca/726c29a0ca843d550bd1e4dbfcc2f683d82f1e0b.jpg?96668_OW1920_OH500"></a>
+            </div>
+        </div>
+        <!-- <div class="btns">
+            <input type="button" id="left" value="<">
+            <input type="button" id="right" value=">">
+        </div> -->
+        <div class="container">
+            <div class="banner-nav">
+                <ul>
+                    <li><a href="#">电视</a><i class="right"> > </i></li>
+                    <li><a href="#">冰箱</a><i class="right"> > </i></li>
+                    <li><a href="#">洗衣机</a><i class="right"> > </i></li>
+                    <li><a href="#">生活电器</a><i class="right"> > </i></li>
+                    <li><a href="#">厨卫电器</a><i class="right"> > </i></li>
+                    <li><a href="#">智能硬件</a><i class="right"> > </i></li>
+                    <li><a href="#">K迷优品</a><i class="right"> > </i></li>
+                    <li><a href="#">大宗采购</a><i class="right"> > </i></li>
+                    <li><a href="#">服务</a><i class="right"> > </i></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="home">
+        <div class="service margin">
+            <div class="box">
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/60/77/bd/879b0d2d303fa098c09722333d674ab8eb474163.png?01666_OW35_OH35">
+                        <p>积分商城</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/34/22/87/f1ae47f1f400e292c73f6c7915ce1564b48a58fa.png?00777_OW35_OH35">
+                        <p>限时抢购</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/25/a8/bb/5a17fefa345f71565d007d087749eda0c6cdaac8.png?01073_OW35_OH35">
+                        <p>领券中心</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/79/19/c6/16f583ac5b90342723faba7cbec8a8c053d10497.png?02617_OW35_OH35">
+                        <p>康佳新闻</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/12/40/10/a3466eb8964286d39dac6edc29a0ccaef20f63aa.png?02328_OW30_OH30">
+                        <p>大宗采购</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#"><img
+                            src="https://www.konka.com/public/images/67/50/e9/4059ebaa083a48f4a698394c642e4aff9c63b531.png?03436_OW35_OH35">
+                        <p>加入康佳</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <a href="#"><img class="layz"
+                        src="https://www.konka.com/public/images/dd/63/b3/e076d0f6dd4721a467bb30dce4040695880a1f55.jpg?47829_OW280_OH180"></a>
+
+
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img class="layz"
+                        src="https://www.konka.com/public/images/31/b6/e6/5f3da7166889e1f6df5a65265dd27dff122675f9.jpg?20753_OW280_OH180"></a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <img class="layz"
+                        src="https://www.konka.com/public/images/49/2b/03/abc96d6dcf716ea63f4fea7b58ab1a5a89cbf845.jpg?63998_OW280_OH180"></a>
+            </div>
+        </div>
+        <div class="star margin">
+            <div class="title">
+                <h3><img
+                        src="https://www.konka.com/public/images/43/ab/a1/bf574f9eeaa0371ea1f625627f9cc03e72b2a806.png?55694_OW38_OH30">
+                    <a href="" title="明星产品" target="_blank">明星产品</a>
+                </h3>
+                <div class="more">
+                    <div class="arrow arr-left">
+                        < </span> </div> <div class="arrow arr-right">></span>
+                    </div>
+                </div>
+            </div>
+            <div class="star-bottom">
+
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="50英寸新视域国品电视" target="_blank">
+                            <img class="layz"
+                                src="https://www.konka.com/public/images/9b/73/79/d98851441389077b8a075a3dfe35bcfcb42012d1.png?32695_OW800_OH800">
+                        </a>
+                    </div>
+                    <h4 class="over">50英寸新视域国品电视</h4>
+                    <h5 class="over">AI人工智能 /防蓝光模式</h5>
+                    <p>￥1699.00 <span class="del">&nbsp;￥1999.00</span>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="50英寸新视域国品电视" target="_blank">
+                            <img class="layz"
+                                src="https://www.konka.com/public/images/9b/73/79/d98851441389077b8a075a3dfe35bcfcb42012d1.png?32695_OW800_OH800">
+                        </a>
+                    </div>
+                    <h4 class="over">50英寸新视域国品电视</h4>
+                    <h5 class="over">AI人工智能 /防蓝光模式</h5>
+                    <p>￥1699.00 <span class="del">&nbsp;￥1999.00</span>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="50英寸新视域国品电视" target="_blank">
+                            <img class="layz"
+                                src="https://www.konka.com/public/images/9b/73/79/d98851441389077b8a075a3dfe35bcfcb42012d1.png?32695_OW800_OH800">
+                        </a>
+                    </div>
+                    <h4 class="over">50英寸新视域国品电视</h4>
+                    <h5 class="over">AI人工智能 /防蓝光模式</h5>
+                    <p>￥1699.00 <span class="del">&nbsp;￥1999.00</span>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="50英寸新视域国品电视" target="_blank">
+                            <img class="layz"
+                                src="https://www.konka.com/public/images/9b/73/79/d98851441389077b8a075a3dfe35bcfcb42012d1.png?32695_OW800_OH800">
+                        </a>
+                    </div>
+                    <h4 class="over">50英寸新视域国品电视</h4>
+                    <h5 class="over">AI人工智能 /防蓝光模式</h5>
+                    <p>￥1699.00 <span class="del">&nbsp;￥1999.00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="main">
+        <div class="tele margin">
+            <div class="title">
+                <h3><img
+                        src="https://www.konka.com/public/images/e4/ff/69/c83d470d54d6effc118b77b9ee913e19288cb98c.png?55699_OW38_OH30">
+                    <a href="list.html?cat_id=82" title="电视" target="_blank">电视</a></h3>
+                <div class="more">
+                    <ul>
+                        <li>
+                            <a href="list.html?cat_id=86" title="OLED" target="_blank">OLED</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=87" title=" 曲面" target="_blank"> 曲面</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=92" title="4K" target="_blank">4K</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=89" title="智能" target="_blank">智能</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=141" title="全面屏" target="_blank">全面屏</a><span>/</span></li>
+                        <li>
+                            <a class="te" href="list.html?cat_id=82" title="更多>>" target="_blank">更多&gt;&gt;</a><span>
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#" title="" target="_blank"><img
+                        src="https://www.konka.com/public/images/74/97/55/c926f6f8826f3b510006f656db353d1537bfb3a1.jpg?37506_OW1140_OH370"></a>
+            </div>
+
+
+            <div class="tele-p">
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="58英寸4K智能语音电视" target="_blank">
+                            <img class="layz"
+                                src="https://www.konka.com/public/images/1b/d9/36/6f9221590941a7d8907ac210dc24e4ee9c48cebe.png?97134_OW800_OH800"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>58英寸4K智能语音电视</h4>
+                    <h5>人工智能/全民K歌 /36核+8G大内存</h5>
+                    <p class="price">￥2099.00 <span class="del">&nbsp;￥2499.00</span>
+                    </p>
+                    <div class="wrapper text-left" style="display: none;">
+                        <p class="satis-show"></p>
+                        <div class="text-warning satisfaction" data-commen="3.00000"
+                            style="background-position: -60px 0px;"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="43英寸无边全面屏电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                src="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>43英寸无边全面屏电视</h4>
+                    <h5>人工智能2.0/高频内存/全民K歌</h5>
+                    <p class="price">￥1899.00 <span class="del">&nbsp;￥2199.00</span>
+                    </p>
+                    <div class="wrapper text-left">
+                        <p class="satis-show">非常好的一款智能电视，从外观到内在都特别喜欢，从康佳的模拟电视到智能电视，我已经用过三台了，对康佳电视情有独钟，还会一如既往的支持！！！</p>
+                        <div class="satisfaction" data-commen="5.00000" 
+                            style="background-position: 0px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="43英寸无边全面屏电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                src="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>43英寸无边全面屏电视</h4>
+                    <h5>人工智能2.0/高频内存/全民K歌</h5>
+                    <p class="price">￥1899.00 <span class="del">&nbsp;￥2199.00</span>
+                    </p>
+                    <div class="wrapper text-left">
+                        <p class="satis-show">非常好的一款智能电视，从外观到内在都特别喜欢，从康佳的模拟电视到智能电视，我已经用过三台了，对康佳电视情有独钟，还会一如既往的支持！！！</p>
+                        <div class="text-warning satisfaction" data-commen="4.78571"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="43英寸无边全面屏电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                src="https://www.konka.com/public/images/3e/a5/fc/4cd4d773e83f1dcfc5ace9e999ab6eceb22dea10.png?97156_OW800_OH800"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>43英寸无边全面屏电视</h4>
+                    <h5>人工智能2.0/高频内存/全民K歌</h5>
+                    <p class="price">￥1899.00 <span class="del">&nbsp;￥2199.00</span>
+                    </p>
+                    <div class="wrapper text-left">
+                        <p class="satis-show">非常好的一款智能电视，从外观到内在都特别喜欢，从康佳的模拟电视到智能电视，我已经用过三台了，对康佳电视情有独钟，还会一如既往的支持！！！</p>
+                        <div class="text-warning satisfaction" data-commen="4.78571"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="KKTV 40英寸4K智能电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                src="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>KKTV 40英寸4K智能电视</h4>
+                    <h5> 64位31核/三星4K屏/人工智能</h5>
+                    <p class="price">￥1349.00 <span class="del">&nbsp;￥1599.00</span>
+                    </p>
+                    <div class="wrapper text-left"
+                        style="display: none; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                        <p class="satis-show">发货快，安装简单，质量好，图像清晰，非常满意。</p>
+                        <div class="text-warning satisfaction" data-commen="4.00000"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="KKTV 40英寸4K智能电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                src="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>KKTV 40英寸4K智能电视</h4>
+                    <h5> 64位31核/三星4K屏/人工智能</h5>
+                    <p class="price">￥1349.00 <span class="del">&nbsp;￥1599.00</span>
+                    </p>
+                    <div class="wrapper text-left"
+                        style="display: none; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                        <p class="satis-show">发货快，安装简单，质量好，图像清晰，非常满意。</p>
+                        <div class="text-warning satisfaction" data-commen="4.00000"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="KKTV 40英寸4K智能电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                src="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>KKTV 40英寸4K智能电视</h4>
+                    <h5> 64位31核/三星4K屏/人工智能</h5>
+                    <p class="price">￥1349.00 <span class="del">&nbsp;￥1599.00</span>
+                    </p>
+                    <div class="wrapper text-left"
+                        style="display: none; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                        <p class="satis-show">发货快，安装简单，质量好，图像清晰，非常满意。</p>
+                        <div class="text-warning satisfaction" data-commen="4.00000"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="figure">
+                        <a href="#" title="KKTV 40英寸4K智能电视" target="_blank">
+                            <img class="layz"
+                                data-original="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                src="https://www.konka.com/public/images/f8/1d/fa/5af76c21d3707195fa91457cf0c14b6c6e4bf865.jpg?78236_OW200_OH200"
+                                style="display: inline;">
+                        </a>
+                    </div>
+                    <h4>KKTV 40英寸4K智能电视</h4>
+                    <h5> 64位31核/三星4K屏/人工智能</h5>
+                    <p class="price">￥1349.00 <span class="del">&nbsp;￥1599.00</span>
+                    </p>
+                    <div class="wrapper text-left"
+                        style="display: none; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                        <p class="satis-show">发货快，安装简单，质量好，图像清晰，非常满意。</p>
+                        <div class="text-warning satisfaction" data-commen="4.00000"
+                            style="background-position: -30px 0px;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="icebox tele margin">
+
+            <div class="title">
+                <h3><img
+                        src="https://www.konka.com/public/images/fb/e3/61/9bfca1816ff0681f098d2a3f50feafb2fcc6cf1a.png?55706_OW29_OH36">
+                    <a href="list.html?cat_id=28" title="冰箱" target="_blank">冰箱</a></h3>
+                <div class="more">
+                    <ul >
+                        <li>
+                            <a href="list.html?cat_id=107" title="对开门冰箱" target="_blank">对开门冰箱</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=62" title="多门冰箱" target="_blank">多门冰箱</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=107" title="十字对开门冰箱" target="_blank">十字对开门冰箱</a><span>/</span>
+                        </li>
+                        <li>
+                            <a href="list.html?cat_id=70" title="冰柜" target="_blank">冰柜</a><span>/</span></li>
+                        <li>
+                            <a href="list.html?cat_id=28" title="更多>>" target="_blank"
+                                style="color: rgb(255, 91, 87);">更多&gt;&gt;</a><span> </span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                    <a href="#" title="" target="_blank"><img
+                            src="https://www.konka.com/public/images/1c/e8/35/110219ae18afb4969a5483a26e02d03c1adc9cd6.jpg?38918_OW1140_OH370"></a>
+                </div>
+                <div class=" icebox-p tele-p">
+                <div class="col-xs-4">
+                        <div class="figure">
+                  <a href="/BCD-401BX4S.html" title="401升十字对开冰箱" target="_blank">
+                      <img class="layz" data-original="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" src="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" style="display: inline;">
+                  </a>
+              </div>
+              <h4 >401升十字对开冰箱</h4>
+              <h5>冷藏自动除霜 / 钢化玻璃面板</h5>
+              <p class="price">￥1799.00            <span class="del">&nbsp;￥2099.00</span>
+              </p>
+              <div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+                  <p class="satis-show">冰箱外观看起很好，很大气，喜欢。京东物流可以，快递小哥服务态度很好，辛苦了</p>
+                  <div class="text-warning satisfaction" data-commen="4.50000" style="background-position: -30px 0px;"></div>
+              </div>
+          </div>
+          <div class="col-xs-4">
+                <div class="figure">
+          <a href="/BCD-401BX4S.html" title="401升十字对开冰箱" target="_blank">
+              <img class="layz" data-original="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" src="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" style="display: inline;">
+          </a>
+      </div>
+      <h4 >401升十字对开冰箱</h4>
+      <h5>冷藏自动除霜 / 钢化玻璃面板</h5>
+      <p class="price">￥1799.00            <span class="del">&nbsp;￥2099.00</span>
+      </p>
+      <div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+          <p class="satis-show">冰箱外观看起很好，很大气，喜欢。京东物流可以，快递小哥服务态度很好，辛苦了</p>
+          <div class="text-warning satisfaction" data-commen="4.50000" style="background-position: -30px 0px;"></div>
+      </div>
+  </div>
+  <div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-401BX4S.html" title="401升十字对开冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" src="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >401升十字对开冰箱</h4>
+<h5>冷藏自动除霜 / 钢化玻璃面板</h5>
+<p class="price">￥1799.00            <span class="del">&nbsp;￥2099.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">冰箱外观看起很好，很大气，喜欢。京东物流可以，快递小哥服务态度很好，辛苦了</p>
+  <div class="text-warning satisfaction" data-commen="4.50000" style="background-position: -30px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-401BX4S.html" title="401升十字对开冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" src="https://www.konka.com/public/images/91/03/cd/99c6c1796b055113e0584e22057f9865111f01ed.jpg?39708_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >401升十字对开冰箱</h4>
+<h5>冷藏自动除霜 / 钢化玻璃面板</h5>
+<p class="price">￥1799.00            <span class="del">&nbsp;￥2099.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">冰箱外观看起很好，很大气，喜欢。京东物流可以，快递小哥服务态度很好，辛苦了</p>
+  <div class="text-warning satisfaction" data-commen="4.50000" style="background-position: -30px 0px;"></div>
+</div>
+</div>
+
+
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-300EGX4SU.html" title="300升法式多门冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" src="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >300升法式多门冰箱</h4>
+<h5>电脑温控 / 净味保鲜</h5>
+<p class="price">￥1499.00            <span class="del">&nbsp;￥1899.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">一直使用了一个多月，才来评价。一般都是在淘宝上买，没在公司的网站上买过。大概过了五天，冰箱送到了家，物流也很负责，背上了五楼，装好。看起来很好看，和在网上看到的一样。冰箱正面是金色，侧面是青色。冷藏室在最上面，是双开门，但里面是没有左右间隔的，不分左右两边。中间是保鲜室，最下面是冷冻室。空间正好，本来有点担心买小了。制冷效果很好非常快。噪音很小不是站冰箱边认真听根本听不出来，耐用的话就非常满意了</p>
+  <div class="text-warning satisfaction" data-commen="5.00000" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-300EGX4SU.html" title="300升法式多门冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" src="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >300升法式多门冰箱</h4>
+<h5>电脑温控 / 净味保鲜</h5>
+<p class="price">￥1499.00            <span class="del">&nbsp;￥1899.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">一直使用了一个多月，才来评价。一般都是在淘宝上买，没在公司的网站上买过。大概过了五天，冰箱送到了家，物流也很负责，背上了五楼，装好。看起来很好看，和在网上看到的一样。冰箱正面是金色，侧面是青色。冷藏室在最上面，是双开门，但里面是没有左右间隔的，不分左右两边。中间是保鲜室，最下面是冷冻室。空间正好，本来有点担心买小了。制冷效果很好非常快。噪音很小不是站冰箱边认真听根本听不出来，耐用的话就非常满意了</p>
+  <div class="text-warning satisfaction" data-commen="5.00000" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-300EGX4SU.html" title="300升法式多门冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" src="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >300升法式多门冰箱</h4>
+<h5>电脑温控 / 净味保鲜</h5>
+<p class="price">￥1499.00            <span class="del">&nbsp;￥1899.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">一直使用了一个多月，才来评价。一般都是在淘宝上买，没在公司的网站上买过。大概过了五天，冰箱送到了家，物流也很负责，背上了五楼，装好。看起来很好看，和在网上看到的一样。冰箱正面是金色，侧面是青色。冷藏室在最上面，是双开门，但里面是没有左右间隔的，不分左右两边。中间是保鲜室，最下面是冷冻室。空间正好，本来有点担心买小了。制冷效果很好非常快。噪音很小不是站冰箱边认真听根本听不出来，耐用的话就非常满意了</p>
+  <div class="text-warning satisfaction" data-commen="5.00000" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/BCD-300EGX4SU.html" title="300升法式多门冰箱" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" src="https://www.konka.com/public/images/ed/9a/99/a26b8bd12db9b70dcd92470cb831b01246d10cf3.jpg?27475_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >300升法式多门冰箱</h4>
+<h5>电脑温控 / 净味保鲜</h5>
+<p class="price">￥1499.00            <span class="del">&nbsp;￥1899.00</span>
+</p>
+<div class="wrapper text-left" style="display: block; height: 100px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; overflow: hidden;">
+  <p class="satis-show">一直使用了一个多月，才来评价。一般都是在淘宝上买，没在公司的网站上买过。大概过了五天，冰箱送到了家，物流也很负责，背上了五楼，装好。看起来很好看，和在网上看到的一样。冰箱正面是金色，侧面是青色。冷藏室在最上面，是双开门，但里面是没有左右间隔的，不分左右两边。中间是保鲜室，最下面是冷冻室。空间正好，本来有点担心买小了。制冷效果很好非常快。噪音很小不是站冰箱边认真听根本听不出来，耐用的话就非常满意了</p>
+  <div class="text-warning satisfaction" data-commen="5.00000" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+</div>
+        </div>
+        <div class="wash tele margin">
+                <div class="title">
+                    	<h3><img src="https://www.konka.com/public/images/85/ef/a7/4505fe577f4160d1908526380376aa42bb2c9081.png?55254_OW29_OH36">
+        <a href="list.html?cat_id=29" title="洗衣机" target="_blank">洗衣机</a></h3>
+        <div class="more">
+    <ul>
+        <li>
+        <a href="list.html?cat_id=63" title="全自动波轮洗衣机" target="_blank">全自动波轮洗衣机</a><span>/</span></li>
+        <li>
+        <a href="list.html?cat_id=64" title="全自动滚筒洗衣机" target="_blank">全自动滚筒洗衣机</a><span>/</span></li>
+        <li>
+        <a href="list.html?cat_id=94" title="半自动洗衣机" target="_blank">半自动洗衣机</a><span>/</span></li>
+        <li>
+        <a href="list.html?cat_id=29" title="更多>>" target="_blank" style="color: rgb(255, 91, 87);">更多&gt;&gt;</a><span> </span></li>
+            </ul>
+</div>                </div>
+
+<div class="item">
+        <a href="#" title="" target="_blank"><img
+                src="https://www.konka.com/public/images/49/0a/53/ae48f02fd115aafc2815c7cb2c60251cfae20a26.jpg?38320_OW1140_OH370"></a>
+    </div>
+    <div class=" wash-p tele-p">
+    <div class="col-xs-4">
+            <div class="figure">
+      <a href="#" title="新飞10公斤变频滚筒洗衣机" target="_blank">
+          <img class="layz" data-original="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" src="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" style="display: inline;">
+      </a>
+  </div>
+  <h4 >新飞10公斤变频滚筒洗衣机</h4>
+  <h5>蒸汽烘干 / 即洗即穿</h5>
+  <p class="price">￥2999.00            <span class="del">&nbsp;￥3299.00</span>
+  </p>
+  <div class="wrapper text-left" style="display: none;">
+      <p class="satis-show"></p>
+      <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+  </div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="新飞10公斤变频滚筒洗衣机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" src="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >新飞10公斤变频滚筒洗衣机</h4>
+<h5>蒸汽烘干 / 即洗即穿</h5>
+<p class="price">￥2999.00            <span class="del">&nbsp;￥3299.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="新飞10公斤变频滚筒洗衣机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" src="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >新飞10公斤变频滚筒洗衣机</h4>
+<h5>蒸汽烘干 / 即洗即穿</h5>
+<p class="price">￥2999.00            <span class="del">&nbsp;￥3299.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="新飞10公斤变频滚筒洗衣机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" src="https://www.konka.com/public/images/c7/38/9b/6b00b2ddd741bf1eb045ea1bdb9565633e1c225e.jpg?39951_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >新飞10公斤变频滚筒洗衣机</h4>
+<h5>蒸汽烘干 / 即洗即穿</h5>
+<p class="price">￥2999.00            <span class="del">&nbsp;￥3299.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+
+</div>
+        </div>
+        <div class="life tele wash margin">
+                <div class="title">
+                    	<h3><img src="https://www.konka.com/public/images/79/3d/94/99c6e05d95087c1d39dca572cc40239eb37adced.png?56307_OW38_OH36">
+        <a href="list.html?cat_id=13" title="生活电器" target="_blank">生活电器</a></h3>
+<div class="more">
+    <ul >
+        <li>
+        <a href="https://www.konka.com/list.html?cat_id=32" title="电水壶" target="_blank">电水壶</a><span>/</span></li>
+        <li>
+        <a href="list.html?cat_id=33" title="养生壶" target="_blank">养生壶</a><span>/</span></li>
+        <li>
+        <a href="https://www.konka.com/list.html?cat_id=174" title="料理机" target="_blank">料理机</a><span>/</span></li>
+        <li>
+        <a href="list.html?cat_id=13" title="更多>>" target="_blank" style="color: rgb(255, 91, 87);">更多&gt;&gt;</a><span> </span></li>
+            </ul>
+
+</div>               
+
+</div>
+<div class="item">
+        <a href="#" title="" target="_blank"><img
+                src="https://www.konka.com/public/images/34/d3/ad/2503aa4f273b230e8fb5b4681be655328e665ddb.jpg?77929_OW1140_OH370"></a>
+    </div>
+    <div class=" life-p tele-p">
+    <div class="col-xs-4">
+            <div class="figure">
+      <a href="#" title="家用现煮现磨意式咖啡机" target="_blank">
+          <img class="layz" data-original="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" src="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" style="display: inline;">
+      </a>
+  </div>
+  <h4>家用现煮现磨意式咖啡机</h4>
+  <h5>一机多用/一键式操作</h5>
+  <p class="price">￥139.00            <span class="del">&nbsp;￥199.00</span>
+  </p>
+  <div class="wrapper text-left" style="display: none;">
+      <p class="satis-show"></p>
+      <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+  </div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="家用现煮现磨意式咖啡机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" src="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4>家用现煮现磨意式咖啡机</h4>
+<h5>一机多用/一键式操作</h5>
+<p class="price">￥139.00            <span class="del">&nbsp;￥199.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="家用现煮现磨意式咖啡机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" src="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4>家用现煮现磨意式咖啡机</h4>
+<h5>一机多用/一键式操作</h5>
+<p class="price">￥139.00            <span class="del">&nbsp;￥199.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="家用现煮现磨意式咖啡机" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" src="https://www.konka.com/public/images/c3/b1/a7/a0165aeea86b5f09c5a828edba2756e8feb257b9.jpg?95509_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4>家用现煮现磨意式咖啡机</h4>
+<h5>一机多用/一键式操作</h5>
+<p class="price">￥139.00            <span class="del">&nbsp;￥199.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+        </div>
+    </div>
+    <div class="smart tele wash margin">
+
+            <div class="title">
+                    <h3><img src="https://www.konka.com/public/images/57/5b/a2/0f719dca7dba386b3b7c1470dde148dc9287e61d.png?56727_OW38_OH36">
+    <a href="list.html?cat_id=53" title="智能硬件" target="_blank">智能硬件</a></h3>
+<div class="more">
+<ul >
+    <li>
+    <a href="list.html?cat_id=60" title="智能微投" target="_blank">智能微投</a><span>/</span></li>
+    <li>
+    <a href="http://www.konka.com/list.html?keyword=%E6%8C%82%E6%9E%B6" title="挂架" target="_blank">挂架</a><span>/</span></li>
+    <li>
+    <a href="http://www.konka.com/list.html?keyword=%E9%81%A5%E6%8E%A7%E5%99%A8" title="遥控器" target="_blank">遥控器</a><span>/</span></li>
+    <li>
+    <a href="list.html?cat_id=53" title="更多>>" target="_blank" style="color: rgb(255, 91, 87);">更多&gt;&gt;</a><span> </span></li>
+        </ul>
+</div>        
+
+</div>
+<div class="item">
+        <a href="#" title="" target="_blank"><img
+                src="https://www.konka.com/public/images/cb/64/b4/3c06a2fe0853ac18b11dc76efd60f753044e400f.jpg?30985_OW1140_OH370"></a>
+    </div>
+    <div class=" smart-p tele-p">
+    <div class="col-xs-4">
+            <div class="figure">
+      <a href="#" title="360度智能家居摄像头" target="_blank">
+          <img class="layz" data-original="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" src="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" style="display: inline;">
+      </a>
+  </div>
+  <h4 >360度智能家居摄像头</h4>
+  <h5>手机操作 / 位移监测报警</h5>
+  <p class="price">￥399.00            <span class="del"></span>
+  </p>
+  <div class="wrapper text-left" style="display: none;">
+      <p class="satis-show"></p>
+      <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+  </div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="360度智能家居摄像头" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" src="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >360度智能家居摄像头</h4>
+<h5>手机操作 / 位移监测报警</h5>
+<p class="price">￥399.00            <span class="del"></span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="360度智能家居摄像头" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" src="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >360度智能家居摄像头</h4>
+<h5>手机操作 / 位移监测报警</h5>
+<p class="price">￥399.00            <span class="del"></span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="#" title="360度智能家居摄像头" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" src="https://www.konka.com/public/images/3c/3d/d3/c36287dcc9d45440602823d17937bab70a01ca6c.jpg?38657_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >360度智能家居摄像头</h4>
+<h5>手机操作 / 位移监测报警</h5>
+<p class="price">￥399.00            <span class="del"></span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+    </div>
+</div>
+<div class="kfans tele wash margin">
+
+        <div class="title">
+                <h3><img src="https://www.konka.com/public/images/3c/e2/5a/852e6d36a5e6de1ce412a4f5cbb77b7fff62815e.png?56942_OW38_OH36">
+<a href="list.html?cat_id=14" title="K迷优品" target="_blank">K迷优品</a></h3>
+<div class="more">
+<ul >
+<li>
+<a href="list.html?cat_id=31" title="生活萌物" target="_blank">生活萌物</a><span>/</span></li>
+<li>
+<a href="list.html?cat_id=148" title="办公好物" target="_blank">办公好物</a><span>/</span></li>
+<li>
+<a href="http://www.konka.com/list.html?cat_id=14" title="更多>>" target="_blank" style="color: rgb(255, 91, 87);">更多&gt;&gt;</a><span> </span></li>
+    </ul>
+</div>            
+
+</div>
+<div class="item">
+        <a href="#" title="" target="_blank"><img
+                src="https://www.konka.com/public/images/42/56/12/046b42697303bc0f66a3975dfd8625bbec372fab.jpg?95185_OW1140_OH370"></a>
+    </div>
+    <div class=" kfans-p tele-p">
+            <div class="col-xs-4">
+                    <div class="figure">
+              <a href="/item-678.html" title="“猪”事大吉毛绒公仔" target="_blank">
+                  <img class="layz" data-original="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" src="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" style="display: inline;">
+              </a>
+          </div>
+          <h4 >“猪”事大吉毛绒公仔</h4>
+          <h5>毛绒玩偶礼物 / 俘获少女心</h5>
+          <p class="price">￥67.00            <span class="del">&nbsp;￥169.00</span>
+          </p>
+          <div class="wrapper text-left" style="display: none;">
+              <p class="satis-show"></p>
+              <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+          </div>
+      </div>
+      <div class="col-xs-4">
+            <div class="figure">
+      <a href="/item-678.html" title="“猪”事大吉毛绒公仔" target="_blank">
+          <img class="layz" data-original="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" src="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" style="display: inline;">
+      </a>
+  </div>
+  <h4 >“猪”事大吉毛绒公仔</h4>
+  <h5>毛绒玩偶礼物 / 俘获少女心</h5>
+  <p class="price">￥67.00            <span class="del">&nbsp;￥169.00</span>
+  </p>
+  <div class="wrapper text-left" style="display: none;">
+      <p class="satis-show"></p>
+      <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+  </div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/item-678.html" title="“猪”事大吉毛绒公仔" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" src="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >“猪”事大吉毛绒公仔</h4>
+<h5>毛绒玩偶礼物 / 俘获少女心</h5>
+<p class="price">￥67.00            <span class="del">&nbsp;￥169.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+<div class="col-xs-4">
+        <div class="figure">
+  <a href="/item-678.html" title="“猪”事大吉毛绒公仔" target="_blank">
+      <img class="layz" data-original="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" src="https://www.konka.com/public/images/76/9a/bb/de7e243324c34f48706d335713d79ccce196c89b.jpg?96290_OW200_OH200" style="display: inline;">
+  </a>
+</div>
+<h4 >“猪”事大吉毛绒公仔</h4>
+<h5>毛绒玩偶礼物 / 俘获少女心</h5>
+<p class="price">￥67.00            <span class="del">&nbsp;￥169.00</span>
+</p>
+<div class="wrapper text-left" style="display: none;">
+  <p class="satis-show"></p>
+  <div class="text-warning satisfaction" data-commen="5" style="background-position: 0px 0px;"></div>
+</div>
+</div>
+        </div>
+</div>
+<div class="news tele  margin">
+        <div class="title">
+         <h3><img src="https://www.konka.com/public/images/0a/40/c4/0fe03f221c3286e4c516000850632bd6310aebe7.png?21671_OW38_OH36">
+<a href="n-3-alist.html" title="康佳新闻" target="_blank">康佳新闻</a></h3>
+        </div>
+<div class="news-box">
+        <div class="col-xs-5">
+                <a href="#" title="IFA2019开幕在即，康佳邀您共享未来之妙！">
+                    <img src="https://www.konka.com/public/images/97/67/e2/1eb6319406e6037db931f2347073a47b623e67f9.jpg?74881_OW900_OH600">
+                    <h4>IFA2019开幕在即，康佳邀您共享未来之妙！</h4>
+                    <p>智慧创想生活，科技筑梦不凡 9月6日—9月11日 康佳闪耀IFA 2019 带你领略“极智生活”的魅力</p>
+                    <span>查看详情</span>
+                </a>
+            </div>
+
+            <div class="col-xs-5">
+                    <a href="#" title="IFA2019开幕在即，康佳邀您共享未来之妙！">
+                        <img src="https://www.konka.com/public/images/97/67/e2/1eb6319406e6037db931f2347073a47b623e67f9.jpg?74881_OW900_OH600">
+                        <h4 >IFA2019开幕在即，康佳邀您共享未来之妙！</h4>
+                        <p>智慧创想生活，科技筑梦不凡 9月6日—9月11日 康佳闪耀IFA 2019 带你领略“极智生活”的魅力</p>
+                        <span>查看详情</span>
+                    </a>
+                </div>
+                <div class="col-xs-5">
+                        <a href="#" title="IFA2019开幕在即，康佳邀您共享未来之妙！">
+                            <img src="https://www.konka.com/public/images/97/67/e2/1eb6319406e6037db931f2347073a47b623e67f9.jpg?74881_OW900_OH600">
+                            <h4 >IFA2019开幕在即，康佳邀您共享未来之妙！</h4>
+                            <p>智慧创想生活，科技筑梦不凡 9月6日—9月11日 康佳闪耀IFA 2019 带你领略“极智生活”的魅力</p>
+                            <span>查看详情</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-5">
+                            <a href="#" title="IFA2019开幕在即，康佳邀您共享未来之妙！">
+                                <img src="https://www.konka.com/public/images/88/56/49/d319c09fab0177527767a8a0fa8eeb54615dbc6e.jpg?73089_OW900_OH600">
+                                <h4 >IFA2019开幕在即，康佳邀您共享未来之妙！</h4>
+                                <p>智慧创想生活，科技筑梦不凡 9月6日—9月11日 康佳闪耀IFA 2019 带你领略“极智生活”的魅力</p>
+                                <span >查看详情</span>
+                            </a>
+                        </div>
+
+</div>
+
+</div>
+<div class="come news tele margin">
+        <div class="title">
+                <h3><img src="https://www.konka.com/public/images/db/c9/d2/35b1004e3c5363f36ec7596a584186ed814fcdb5.png?57588_OW38_OH43">
+ <a href="http://bbs.konka.com" title="康佳社区" target="_blank">康佳社区</a></h3>
+         </div>
+         <div class="come-box news-box">
+         <div class="col-xs-5">
+                <a href="#" title="你好，新同学！你有一份开学礼物待领取">
+                    <img src="https://www.konka.com/public/images/88/56/d5/81a1da407ce5a129fdf78696e73bd7969f333dc7.jpg?70001_OW270_OH180">
+                    <h4 >你好，新同学！你有一份开学礼物待领取</h4>
+                    <p>转眼间一个暑假过去了，每个家长都同自己的孩子度过了一个愉快却又有些许小纠结的暑假。
+            </p>
+                    <span >阅读全文</span>
+                </a>
+            </div>
+            <div class="col-xs-5">
+                    <a href="#" title="你好，新同学！你有一份开学礼物待领取">
+                        <img src="https://www.konka.com/public/images/88/56/d5/81a1da407ce5a129fdf78696e73bd7969f333dc7.jpg?70001_OW270_OH180">
+                        <h4 >你好，新同学！你有一份开学礼物待领取</h4>
+                        <p>转眼间一个暑假过去了，每个家长都同自己的孩子度过了一个愉快却又有些许小纠结的暑假。
+                </p>
+                        <span >阅读全文</span>
+                    </a>
+                </div>
+                <div class="col-xs-5">
+                        <a href="#" title="你好，新同学！你有一份开学礼物待领取">
+                            <img src="https://www.konka.com/public/images/88/56/d5/81a1da407ce5a129fdf78696e73bd7969f333dc7.jpg?70001_OW270_OH180">
+                            <h4 >你好，新同学！你有一份开学礼物待领取</h4>
+                            <p>转眼间一个暑假过去了，每个家长都同自己的孩子度过了一个愉快却又有些许小纠结的暑假。
+                    </p>
+                            <span >阅读全文</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-5">
+                            <a href="#" title="你好，新同学！你有一份开学礼物待领取">
+                                <img src="https://www.konka.com/public/images/88/56/d5/81a1da407ce5a129fdf78696e73bd7969f333dc7.jpg?70001_OW270_OH180">
+                                <h4 >你好，新同学！你有一份开学礼物待领取</h4>
+                                <p>转眼间一个暑假过去了，每个家长都同自己的孩子度过了一个愉快却又有些许小纠结的暑假。
+                        </p>
+                                <span >阅读全文</span>
+                            </a>
+                        </div>
+        </div>
+</div>
+    </section>
+
+<footer>
+<div class="footer-t margin clear">
+    <ul class="clear">
+        <li>
+        <div class="left">
+            <img src="https://www.konka.com/public/images/29/72/32/508be9abdf01173241a65b671c4ec6fff242e359.png?72574_OW29_OH29">
+        </div>
+        <div class="foo-title">
+            <h4>全场包邮</h4>
+            <h6>全场商品免费送到家</h6>
+        </div>
+    </li>
+         <li>
+        <div class="left">
+            <img src="https://www.konka.com/public/images/8e/e7/58/dda3bbcea1734e9cc57f733bd39c7bdfa8a098c9.png?72590_OW23_OH24">
+        </div>
+        <div class="foo-title">
+            <h4>质量保证</h4>
+            <small>享受国家三包政策</small>
+        </div>
+    </li> 
+         <li>
+        <div class="left">
+            <img src="https://www.konka.com/public/images/0a/f6/6b/fa606e57f51c1c20bee1b08b460b546a2308535a.png?72616_OW24_OH24">
+        </div>
+        <div class="foo-title">
+            <h4>权益保障</h4>
+            <small>7天包退15天包换</small>
+        </div>
+    </li>
+        <li>
+        <div class="left">
+            <img src="https://www.konka.com/public/images/18/f6/51/e7f1acfff43fd63737b75f9dd040c04875dbef80.png?72627_OW24_OH24">
+        </div>
+        <div class="foo-title">
+            <h4>放心服务</h4>
+            <small>24小时内上门服务</small>
+        </div>
+    </li>
+        <li>
+        <div class="left">
+            <img src="https://www.konka.com/public/images/e1/df/92/2304a231ed8691bc454c367e282052810d5634d0.png?72639_OW25_OH25">
+        </div>
+        <div class="foo-title">
+            <h4>意外惊喜</h4>
+            <small>限时打折优惠不断</small>
+        </div>
+    </li> 
+    </ul>
+
+</div>
+
+<div class="footer-c margin clear">
+    <div class="footer-c-l" >
+    <dl>
+        <dt>帮助中心</dt>
+        <dd><a href="#" target="_blank">购买指南</a></dd>
+        <dd><a href="#" target="_blank">支付方式</a></dd>
+        <dd><a href="#" target="_blank">配送方式</a></dd>
+        <dd><a href="#" target="_blank">售后政策</a></dd>
+        <dd><a href="#" target="_blank">防伪查询</a></dd>
+        
+    </dl>
+    <dl>
+        <dt>新闻中心</dt>
+        <dd><a href="#" target="_blank">集团新闻</a></dd>
+        <dd><a href="#" target="_blank">媒体报道</a></dd>
+        
+    </dl>
+    <dl>
+        <dt>投资者关系</dt>
+        <dd><a href="#" target="_blank">公司概要</a></dd>
+        <dd><a href="#" target="_blank">高管团队</a></dd>
+
+        <dd><a href="#" target="_blank">最新公告</a></dd>
+        <dd><a href="#" target="_blank">公司治理</a></dd>
+        
+    </dl>
+    <dl>
+        <dt>集团成员网站</dt>
+        <dd><a href="#" target="_blank">华侨城集团</a></dd>
+        <dd><a href="#" target="_blank">康佳全球服务中心</a></dd>
+        <dd><a href="#" target="_blank">康佳国际营销</a></dd>
+        <dd><a href="#" target="_blank">康佳移动互联科技</a></dd>
+        <dd><a href="#" target="_blank">康佳壹视界商业显示</a></dd>
+        <dd><a href="#" target="_blank">康佳智能电器</a></dd>
+    
+        
+    </dl>
+    <dl>
+        <dt>关于我们</dt>
+        <dd><a href="#" target="_blank">了解康佳</a></dd>
+        <dd><a href="#" target="_blank">加入康佳</a></dd>
+        <dd><a href="#" target="_blank">校园招聘</a></dd>
+        <dd><a href="#" target="_blank">联系我们</a></dd>
+        
+    </dl>
+    <dl>
+        <dt>关注我们</dt>
+        <dd><a href="#" target="_blank">官方微博</a></dd>
+        <dd class="showCode"><a href="#">官方微信</a>
+            <div class="code">
+                <img src="https://www.konka.com/themes/pc/konka/images/ewm.jpg?v16d2" alt="">
+            </div>
+        </dd>
+    
+        <dd><a href="#" target="_blank">官方社区</a></dd>
+        <dd class="showCode"><a href="#">K迷俱乐部</a>
+            <div class="code">
+                <img src="https://www.konka.com/themes/pc/konka/images/km.jpg?v16d2" alt="">
+            </div>
+        </dd>
+        <dd class="showCode"><a href="#">康佳微商城</a>
+            <div class="code">
+                <img src="https://www.konka.com/themes/pc/konka/images/wsc.jpg?v16d2" alt="">
+            </div>
+        </dd>
+        <dd class="showCode"><a href="#">康佳服务</a>
+            <div class="code">
+                <img src="https://www.konka.com/themes/pc/konka/images/kafu.jpg?v16d2" alt="">
+            </div>
+        </dd>
+        <dd><a href="#" target="_blank">腾讯视频TV端</a></dd>
+       
+    </dl>
+</div>
+    <div class="footer-c-r">
+        <p >24小时全国服务热线</p>
+        <h4>400-880-0016</h4>
+        <a href="#" target="_blank">
+            <span>购买咨询</span>
+        </a> 
+        
+        <a style="margin-left: 10px;" target="_blank" href="#">
+            <span>售后服务</span>
+        </a>
+    </div>
+</div>
+    
+
+<div class="footer-b clear">
+
+        <div class="logo">
+                <img src="https://www.konka.com/themes/pc/konka/images/konka.png?v16d2" alt="">
+            </div>
+            <div class="link">
+                    <p>Copyright © 1980-2019 康佳集团股份有限公司 版权所有</p>
+                    <span>|</span><a href="#">联系我们</a>
+                    <span>|</span><a href="#">法律声明</a>
+                    <span>|</span><a href="#">隐私保护</a>
+                    <span>|</span><a href="#">快递查询</a>
+                    <span>|</span><a href="#">腾讯视频TV端</a>
+                    <span>|</span><a href="#" target="_blank">粤ICP备 05059413</a>
+                </div>
+</div>
+</footer>
+<div id="last">
+        
+    <a href="https://credit.szfw.org/CX20160830025087000485.html" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert3.png?v16d2" alt=""></a>
+     <a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.konka.com&amp;at=official" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert2.png?v16d2" alt=""></a>
+       <a href="http://szcert.ebs.org.cn/1db11754-da73-4970-aa65-a587139e866e" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert.gif?v16d2" alt=""></a>
+ 
+
+
+</div>
+    <script>
+        $('.col-xs-4').hover(function () {
+            var satisShow = $(this).find('.text-left').find('.satis-show').html();
+            if (satisShow == "" || satisShow == null) {
+                $(this).find('.wrapper').hide();
+            } else {
+                $(this).find('.wrapper').stop().slideDown("slow");
+            }
+        }, function () {
+            $(' .col-xs-4').find('.wrapper').stop().slideUp("500");
+        });
+        $('.text-left').find('.satis-show').map(function () {
+            var satisShow = $(this).html();
+        })
+
+        
+    </script>
+<script>
+
+$('.text-left').find('.satis-show').map(function(){
+    var satisShow=$(this).html();
+})
+$('.text-left').find('.satisfaction').map(function(){
+    var nums=parseInt($(this).attr("data-commen"));
+    if(nums==" " || nums==null){
+        $(this).hide();
+    }
+    if(nums==1.0||nums==1.5){
+        $(this).css({"background-position":'-126px 0'});
+    }
+    if(nums==2.0 || nums==2.5){
+        $(this).css({"background-position":'-94px 0'});
+    }
+    if(nums==3.0 || nums==3.5){
+        $(this).css({"background-position":'-60px 0'});
+    }
+    if(nums==4.0 || nums==4.5){
+        $(this).css({"background-position":'-30px 0'});
+    }
+    if(nums==5.0){
+        $(this).css({"background-position":"0 0"});
+    }
+});
+</script>
+
+</body>
+
+</html>
