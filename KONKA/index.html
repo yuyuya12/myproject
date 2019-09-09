@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="back-top">
+    <!-- <div class="back-top">
         <ul>
 
             <li class="kefu"><a href="javascript:void(0)" style="cursor:hand" target="_blank"><span
@@ -32,45 +32,67 @@
             <li id="the-top" style="display: none;"><a href="javascript:;"><span
                         class="glyphicon glyphicon-plane"></span> <span class="backShow">回到顶部</span></a></li>
         </ul>
-    </div>
+    </div> -->
     <script>
 
 
     </script>
 <div class="anchor">
         <div class="container-fluid">
-            <ul>
-                <li style="line-height: 17px;">
-                    <a href=".star"><span>明星产品</span></a>
+            <ul class="floor-u">
+                <li style="line-height: 17px;" class="floor-l">
+                 <a > <span>明星产品</span></a>
                 </li>
-                <li style="line-height: 35px;">
-                    <a href=".tele"><span>电视</span></a>
+                
+                <li style="line-height: 35px;" class="floor-l">
+                    <a >  <span>电视</span></a>
                 </li>
-                <li style="line-height: 35px;">
-                    <a href=".wash"><span>冰箱</span></a>
+                <li style="line-height: 35px;" class="floor-l">
+                    <a >  <span>冰箱</span></a>
                 </li>
-                <li style="line-height: 17px;">
-                    <a href="#washing"><span>洗衣机</span></a>
+                <li style="line-height: 17px;" class="floor-l">
+                    <a > <span>洗衣机</span></a>
                 </li>
-                <li style="line-height: 17px;">
-                    <a href="#appliances"><span>生活电器</span></a>
+                <li style="line-height: 17px;" class="floor-l">
+                    <a >  <span>生活电器</span></a>
                 </li>
               
                 
                 
-                <li style="line-height: 17px;">
-                    <a href="#Hardware"><span>智能硬件</span></a>
+                <li style="line-height: 17px;" class="floor-l">
+                    <a ><span>智能硬件</span></a>
                 </li>
               
               
-                <li style="line-height: 17px;">
-                    <a href="#parts"><span>K迷优品</span></a>
+                <li style="line-height: 17px;" class="floor-l">
+                    <a ><span>K迷优品</span></a>
                 </li>
             </ul>
         </div>
     </div>
 
+<script>  
 
+  $(".floor-u").children(".floor-l").click(function(){
+    // console.log($(this).index())
+    // console.log($(".box").eq($(this).index())[0].offsetTop)
+
+    // $(document).scrollTop($(".box").eq($(this).index())[0].offsetTop)
+
+    // 获取点击li的索引
+    var index = $(this).index();
+
+    // 根据li的索引获取对应的div的距离顶部的位置
+    var t = $(".floor").eq(index)[0].offsetTop;
+console.log(3)
+    // 将这个位置，通过动画，设置给根元素html的滚动距离
+    $("html").animate({
+        scrollTop:t
+    })
+})
+
+
+</script>
     <section id="top" >
         <div class="margin"> 
         <div class="top-l">
@@ -1228,7 +1250,8 @@ function searchShow(){
                         src="https://www.konka.com/public/images/49/2b/03/abc96d6dcf716ea63f4fea7b58ab1a5a89cbf845.jpg?63998_OW280_OH180"></a>
             </div>
         </div>
-        <div class="star margin" id="star">
+     
+        <div class="star margin floor" id="floor1">
             <div class="title">
                 <h3><img
                         src="https://www.konka.com/public/images/43/ab/a1/bf574f9eeaa0371ea1f625627f9cc03e72b2a806.png?55694_OW38_OH30">
@@ -1292,11 +1315,12 @@ function searchShow(){
                 </div>
             </div>
         </div>
-
+  
 
     </section>
     <section id="main">
-        <div class="tele margin">
+           
+        <div class="tele margin floor" id="floor2">
             <div class="title">
                 <h3><img
                         src="https://www.konka.com/public/images/e4/ff/69/c83d470d54d6effc118b77b9ee913e19288cb98c.png?55699_OW38_OH30">
@@ -1486,7 +1510,9 @@ function searchShow(){
 
             </div>
         </div>
-        <div class="icebox tele margin">
+            
+            
+        <div class="icebox tele margin floor" id="floor3">
 
             <div class="title">
                 <h3><img
@@ -1638,7 +1664,9 @@ function searchShow(){
 </div>
 </div>
         </div>
-        <div class="wash tele margin">
+           
+          
+        <div class="wash tele margin floor" id="floor4">
                 <div class="title">
                     	<h3><img src="https://www.konka.com/public/images/85/ef/a7/4505fe577f4160d1908526380376aa42bb2c9081.png?55254_OW29_OH36">
         <a href="list.html?cat_id=29" title="洗衣机" target="_blank">洗衣机</a></h3>
@@ -1723,7 +1751,9 @@ function searchShow(){
 
 </div>
         </div>
-        <div class="life tele wash margin">
+  
+    
+        <div class="life tele wash margin floor" id="floor5">
                 <div class="title">
                     	<h3><img src="https://www.konka.com/public/images/79/3d/94/99c6e05d95087c1d39dca572cc40239eb37adced.png?56307_OW38_OH36">
         <a href="list.html?cat_id=13" title="生活电器" target="_blank">生活电器</a></h3>
@@ -1809,7 +1839,8 @@ function searchShow(){
 </div>
         </div>
     </div>
-    <div class="smart tele wash margin">
+
+    <div class="smart tele wash margin floor" id="floor6">
 
             <div class="title">
                     <h3><img src="https://www.konka.com/public/images/57/5b/a2/0f719dca7dba386b3b7c1470dde148dc9287e61d.png?56727_OW38_OH36">
@@ -1895,7 +1926,9 @@ function searchShow(){
 </div>
     </div>
 </div>
-<div class="kfans tele wash margin">
+
+
+<div class="kfans tele wash margin floor" id="floor7">
 
         <div class="title">
                 <h3><img src="https://www.konka.com/public/images/3c/e2/5a/852e6d36a5e6de1ce412a4f5cbb77b7fff62815e.png?56942_OW38_OH36">
@@ -1979,7 +2012,8 @@ function searchShow(){
 </div>
         </div>
 </div>
-<div class="news tele  margin">
+
+<div class="news tele  margin ">
         <div class="title">
          <h3><img src="https://www.konka.com/public/images/0a/40/c4/0fe03f221c3286e4c516000850632bd6310aebe7.png?21671_OW38_OH36">
 <a href="n-3-alist.html" title="康佳新闻" target="_blank">康佳新闻</a></h3>
@@ -2022,7 +2056,7 @@ function searchShow(){
 </div>
 
 </div>
-<div class="come news tele margin">
+<div class="come news tele margin ">
         <div class="title">
                 <h3><img src="https://www.konka.com/public/images/db/c9/d2/35b1004e3c5363f36ec7596a584186ed814fcdb5.png?57588_OW38_OH43">
  <a href="http://bbs.konka.com" title="康佳社区" target="_blank">康佳社区</a></h3>
@@ -2069,7 +2103,7 @@ function searchShow(){
     </section>
 
 <footer>
-<div class="footer-t margin clear">
+<div class="footer-t margin clear ">
     <ul class="clear">
         <li>
         <div class="left">
