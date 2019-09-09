@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>康佳</title>
-    <link href="..\libs\bootstrap.min.css" rel="stylesheet">
+   
     <script src="../jq/jquery.js"></script>
+    <link href="../libs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/public2.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -72,24 +73,24 @@
     </div>
 
 <script>  
+// //楼层效果
+//   $(".floor-u").children(".floor-l").click(function(){
+//     // console.log($(this).index())
+//     // console.log($(".box").eq($(this).index())[0].offsetTop)
 
-  $(".floor-u").children(".floor-l").click(function(){
-    // console.log($(this).index())
-    // console.log($(".box").eq($(this).index())[0].offsetTop)
+//     // $(document).scrollTop($(".box").eq($(this).index())[0].offsetTop)
 
-    // $(document).scrollTop($(".box").eq($(this).index())[0].offsetTop)
+//     // 获取点击li的索引
+//     var index = $(this).index();
 
-    // 获取点击li的索引
-    var index = $(this).index();
-
-    // 根据li的索引获取对应的div的距离顶部的位置
-    var t = $(".floor").eq(index)[0].offsetTop;
-console.log(3)
-    // 将这个位置，通过动画，设置给根元素html的滚动距离
-    $("html").animate({
-        scrollTop:t
-    })
-})
+//     // 根据li的索引获取对应的div的距离顶部的位置
+//     var t = $(".floor").eq(index)[0].offsetTop;
+// console.log(3)
+//     // 将这个位置，通过动画，设置给根元素html的滚动距离
+//     $("html").animate({
+//         scrollTop:t
+//     })
+// })
 
 
 </script>
@@ -133,8 +134,6 @@ console.log(3)
     <nav >
            
         <div class="nav-top ">
-              
-
             <div class="logoImg yc"><a href="#"><img
                         src="https://www.konka.com/themes/pc/konka/images/logo.png?vee99"></a>
                     </div>
@@ -688,25 +687,25 @@ console.log(3)
         
     </nav>
 <script>
-$(".searchimg").on('click',function(event){
-  event.stopPropagation();
-  $('.nav .u1').fadeOut(600);
-  $('.search').fadeIn(600)
-  .hover(function(){ 
-             $(".search-content").show();  
-         },function (){  
-             $(".search-content").hide();  
-         })
-});
-//X关闭
-$('.close').on('click',function(){
- searchShow();
-  return false;
-});
-function searchShow(){
-  $('.search').fadeOut(300);
-  $('nav .l1').fadeIn(1000);
-};
+// $(".searchimg").on('click',function(event){
+//   event.stopPropagation();
+//   $('.nav .u1').fadeOut(600);
+//   $('.search').fadeIn(600)
+//   .hover(function(){ 
+//              $(".search-content").show();  
+//          },function (){  
+//              $(".search-content").hide();  
+//          })
+// });
+// //X关闭
+// $('.close').on('click',function(){
+//  searchShow();
+//   return false;
+// });
+// function searchShow(){
+//   $('.search').fadeOut(300);
+//   $('nav .l1').fadeIn(1000);
+// };
 
 </script>
       
@@ -714,52 +713,47 @@ function searchShow(){
 <!-- 
    //nav-top顶部固定 -->
      <script >
-        var navTop = $('.nav-top').offset().top;
-        $(window).scroll(function () {
-            //滚动条的滚动距离
-            var scrTop = $(window).scrollTop();
-            if (scrTop >= navTop) {
-                $('.nav-top').addClass('site-header-fixed')
-            } else {
-                $('.nav-top').removeClass('site-header-fixed')
-            }
+        // var navTop = $('.nav-top').offset().top;
+        // $(window).scroll(function () {
+        //     //滚动条的滚动距离
+        //     var scrTop = $(window).scrollTop();
+        //     if (scrTop >= navTop) {
+        //         $('.nav-top').addClass('site-header-fixed')
+        //     } else {
+        //         $('.nav-top').removeClass('site-header-fixed')
+        //     }
 
-        });
+        // });
     </script>
         <script >
             /*
          *导航切换显示
          */
-         $('.nav-top .l1').mousemove(function(){
-            $(this).find('.item').addClass('item-show');
-        });
-        $('.nav-top .l1').mouseout(function(){
-            $('.nav-top .l1').find('.item').removeClass('item-show');
-        });
+        //  $('.nav-top .l1').mousemove(function(){
+        //     $(this).find('.item').addClass('item-show');
+        // });
+        // $('.nav-top .l1').mouseout(function(){
+        //     $('.nav-top .l1').find('.item').removeClass('item-show');
+        // });
     </script>
     <section id="banner">
-        <div class="lunbo">
-            <div class="item te">
-                <a href="#" target="_blank"><img
-                        src="https://www.konka.com/public/images/6b/90/9a/38d8bd41ec3f3f16ead9e19397487ad3e7f5c1a9.jpg?71283_OW1920_OH500"></a>
+        <div class="banner1 box">
+                <div class="imgbox">
+                    <img src="https://www.konka.com/public/images/e1/56/c6/6ca2ae59beeabaab18bec20f5d9c13c0d45ea6ef.jpg?36490_OW1920_OH500" alt="">
+                    <img src="https://www.konka.com/public/images/0b/78/4b/b3ecf68adf0811ba8be67de5a23c66f06c141d85.gif?54107_OW1920_OH500" alt="">
+                    <img src="https://www.konka.com/public/images/08/86/1d/cffda840bcce2f9c629ce120dd3d5e8b728a5404.jpg?32163_OW1920_OH500" alt="">
+                    <img src="https://www.konka.com/public/images/b1/08/58/716b48144c4f6a3e03cd13069208e9cd3d14b224.jpg?61935_OW1920_OH500" alt="">
+                    <img src="https://www.konka.com/public/images/d0/02/ca/726c29a0ca843d550bd1e4dbfcc2f683d82f1e0b.jpg?96668_OW1920_OH500" alt="">
+        
+                </div>
+                <div class="btns">
+                    <input type="button" id="left" value="<<<">
+                    <input type="button" id="right" value=">>>">
+                </div>
             </div>
-            <div class="item">
-                <a href="#" target="_blank"><img
-                        src="https://www.konka.com/public/images/0b/78/4b/b3ecf68adf0811ba8be67de5a23c66f06c141d85.gif?54107_OW1920_OH500"></a>
-            </div>
-            <div class="item">
-                <a href="#" target="_blank"><img
-                        src="https://www.konka.com/public/images/08/86/1d/cffda840bcce2f9c629ce120dd3d5e8b728a5404.jpg?32163_OW1920_OH500"></a>
-            </div>
-            <div class="item">
-                <a href="#" target="_blank"><img
-                        src="https://www.konka.com/public/images/b1/08/58/716b48144c4f6a3e03cd13069208e9cd3d14b224.jpg?61935_OW1920_OH500"></a>
-            </div>
-            <div class="item">
-                <a href="#" target="_blank"><img
-                        src="https://www.konka.com/public/images/d0/02/ca/726c29a0ca843d550bd1e4dbfcc2f683d82f1e0b.jpg?96668_OW1920_OH500"></a>
-            </div>
-        </div>
+
+
+
         <!-- <div class="btns">
             <input type="button" id="left" value="<">
             <input type="button" id="right" value=">">
@@ -1182,12 +1176,12 @@ function searchShow(){
 
     </section>
 <script>
-	$(".l2").hover(function (){
-			$(this).find(".children").show();
-		},function (){
-			$(this).find(".children").hide();;
+	// $(".l2").hover(function (){
+	// 		$(this).find(".children").show();
+	// 	},function (){
+	// 		$(this).find(".children").hide();;
 			
-		});
+	// 	});
 
 </script>
 
@@ -1195,7 +1189,7 @@ function searchShow(){
 
     <section id="home">
         <div class="service margin">
-            <div class="box">
+            <div class="box2">
                 <div class="col-xs-2">
                     <a href="#"><img
                             src="https://www.konka.com/public/images/60/77/bd/879b0d2d303fa098c09722333d674ab8eb474163.png?01666_OW35_OH35">
@@ -2268,50 +2262,74 @@ function searchShow(){
 
 </div>
     <script>
-        $('.col-xs-4').hover(function () {
-            var satisShow = $(this).find('.text-left').find('.satis-show').html();
-            if (satisShow == "" || satisShow == null) {
-                $(this).find('.wrapper').hide();
-            } else {
-                $(this).find('.wrapper').stop().slideDown("slow");
-            }
-        }, function () {
-            $(' .col-xs-4').find('.wrapper').stop().slideUp("500");
-        });
-        $('.text-left').find('.satis-show').map(function () {
-            var satisShow = $(this).html();
-        })
+        // $('.col-xs-4').hover(function () {
+        //     var satisShow = $(this).find('.text-left').find('.satis-show').html();
+        //     if (satisShow == "" || satisShow == null) {
+        //         $(this).find('.wrapper').hide();
+        //     } else {
+        //         $(this).find('.wrapper').stop().slideDown("slow");
+        //     }
+        // }, function () {
+        //     $(' .col-xs-4').find('.wrapper').stop().slideUp("500");
+        // });
+        // $('.text-left').find('.satis-show').map(function () {
+        //     var satisShow = $(this).html();
+        // })
 
         
     </script>
 <script>
 
-$('.text-left').find('.satis-show').map(function(){
-    var satisShow=$(this).html();
-})
-$('.text-left').find('.satisfaction').map(function(){
-    var nums=parseInt($(this).attr("data-commen"));
-    if(nums==" " || nums==null){
-        $(this).hide();
-    }
-    if(nums==1.0||nums==1.5){
-        $(this).css({"background-position":'-126px 0'});
-    }
-    if(nums==2.0 || nums==2.5){
-        $(this).css({"background-position":'-94px 0'});
-    }
-    if(nums==3.0 || nums==3.5){
-        $(this).css({"background-position":'-60px 0'});
-    }
-    if(nums==4.0 || nums==4.5){
-        $(this).css({"background-position":'-30px 0'});
-    }
-    if(nums==5.0){
-        $(this).css({"background-position":"0 0"});
-    }
-});
+// $('.text-left').find('.satis-show').map(function(){
+//     var satisShow=$(this).html();
+// })
+// $('.text-left').find('.satisfaction').map(function(){
+//     var nums=parseInt($(this).attr("data-commen"));
+//     if(nums==" " || nums==null){
+//         $(this).hide();
+//     }
+//     if(nums==1.0||nums==1.5){
+//         $(this).css({"background-position":'-126px 0'});
+//     }
+//     if(nums==2.0 || nums==2.5){
+//         $(this).css({"background-position":'-94px 0'});
+//     }
+//     if(nums==3.0 || nums==3.5){
+//         $(this).css({"background-position":'-60px 0'});
+//     }
+//     if(nums==4.0 || nums==4.5){
+//         $(this).css({"background-position":'-30px 0'});
+//     }
+//     if(nums==5.0){
+//         $(this).css({"background-position":"0 0"});
+//     }
+// });
 </script>
 
 </body>
 
-</html>
+
+<script src="../jq/jquery.js"></script>
+<script src="../jq/jquery.banner.js"></script>
+<script>
+
+        $(".banner1").banner({
+            items:$(".banner1").find("img"),      //必选
+            left:$(".banner1").find("#left"),     //可选，传了就有功能，没传就没有功能
+            right:$(".banner1").find("#right"),   //可选，传了就有功能，没传就没有功能
+            list:true,         //可选，默认为true
+            autoPlay:true,     //可选，默认为true
+            delayTime:2000,     //可选，默认为3000
+            index:0             //可选，默认为0
+        });
+     
+    
+    </script>
+    <script src="../jq/floor.js"></script>
+    <script src="../jq/search.js"></script>
+    <script src="../jq/nav-top.js"></script>
+    <script src="../jq/img-commen.js"></script>
+    <script src="../jq/nav-er.js"></script>
+    <script src="../jq/banner-nav.js"></script>
+
+    </html>

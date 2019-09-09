@@ -1,0 +1,60 @@
+#backtu{
+    height:600px;
+    position:relative;
+    
+}
+#backtu .login-bg{
+    height:588px;width:100%;
+}
+#backtu .login-bg .login-width{
+    width: 1140px;
+    height: 588px;
+    position: relative;
+    margin: 0 auto;
+}
+#backtu .login-bg .login-panel,
+#backtu .login-bg .signup-panel,
+#backtu .login-bg .login-panel,
+#backtu .login-bg .signup-panel {
+    position: absolute;
+    top: 99px;
+    right: 0;
+    width: 450px
+}
+#backtu .sig-bg,
+#backtu .sig-bg {
+    background: url(../images/sigup.jpg) no-repeat;
+    background-size: 100% 100%
+}
+
+#backtu .passport-login-container .sig-bg .login-panel,
+#backtu .passport-login-container .sig-bg .signup-panel,
+#backtu .passport-signup-container .sig-bg .login-panel,
+#backtu .passport-signup-container .sig-bg .signup-panel {
+    position: absolute;
+    top: 104px;
+    right: 0;
+    width: 450px
+}
+
+#backtu .passport-lost-container {
+    height: 558px;
+    margin: 0 auto;
+    width: 1150px;
+    position: relative
+}
+
+#backtu  .passport-lost-container .panel {
+    margin-bottom: 0;
+    position: absolute;
+    right: 5px;
+    width: 480px;
+    top: 99px
+}
+
+#backtu  .passport-lost-container .panel form {
+    padding-top: 5px
+}
+footer{
+    margin-top:-10px;
+}
