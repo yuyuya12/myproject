@@ -303,7 +303,8 @@ body {
     width: 70px;
     border: 1px solid #ddd;
     margin-top: -2px;
-    outline: 0
+    outline: 0;
+    text-align: center;
 }
 
 #product .product-container .product-page .row .col-xs-5 .product-page-cart .product-quantity {
@@ -322,7 +323,8 @@ body {
     border-color: #ddd;
     font-size: 24px;
     padding-bottom: 3px;
-    outline: 0
+    outline: 0;
+    text-align: center;
 }
 
 #product .product-container .product-page .row .col-xs-5 .product-page-cart .product-quantity button:last-child {
