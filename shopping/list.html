@@ -5,11 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>k迷优品</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>kfans</title>
+    <title>Document</title>
+    <style>
+        .box3 {
+            width: 1140px;
+            overflow: auto;
+            margin: auto
+        }
+
+        .box3 .goods {
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            background: #fff;
+            margin-left: 15px;
+            width: 260px;
+            height: 340px;
+            padding: 10px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .box3 .goods:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+            z-index: 2;
+            transition: all .5s;
+            transform: translate3d(0, -2px, 0);
+        }
+
+        .box3 .goods:nth-child(1),.box3 .goods:nth-child(5), .box3 .goods:nth-child(9){
+            margin-left: 0;
+        }
+
+        .goods img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .goods p {
+            margin: 0;
+            line-height: 30px;
+            height: 30px;
+            overflow: hidden;
+            font-size: 16px;
+
+            color: #222;
+        }
+
+        .goods span {
+            padding-top: 10px;
+            color: #ed1c24;
+            font: 17px/20px "";
+            display: position;
+        }
+
+
+        .goods em {
+            padding: 5px;
+            display: block;
+            color: #989898;
+            font-size: 14px;
+        }
+
+        .goods i {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 80px;
+            width: 100px;
+            margin: auto;
+            background: cornflowerblue;
+        }
+
+      
+
+      
+       
+    </style>
+
     <script src="../jq/jquery.js"></script>
     <link href="../libs/bootstrap.min.css" rel="stylesheet">
     <link href="../libs/bootstrap-theme.css" rel="stylesheet">
@@ -21,6 +94,7 @@
 </head>
 
 <body>
+
     <section id="top">
         <div class="margin">
             <div class="top-l">
@@ -49,7 +123,8 @@
                         <!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
                         <img class="top-header-cart"
                             src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?vee99">
-                        购物车<span ><a href="car.html" class="red current" style="font-size:15px;color:red">(去结算)</a></span> 
+                        购物车<span><a href="car.html" class="red current"
+                                style="font-size:15px;color:red">(去结算)</a></span>
                         <span class="sp-num" style="display:none"></span>
                     </a>
                 </div>
@@ -695,58 +770,355 @@
                 </div>
             </div>
 
-       
-<div class="goods-list margin">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-                <div class="form-inline" role="search">
-                    <div class="btn-group order-btn btn-sm onc" role="group" aria-label="...">
-                        <a class="btn-default" href="#">
-                            默认
-                        </a>
-                                                  <a class="iconChange btn-default" href="#">价格
-                          <span><i class="glyphicon glyphicon-triangle-top btn-xs"></i><i class="glyphicon glyphicon-triangle-bottom btn-xs"></i></span>
-                        </a>
-                        
-                        <a class="btn-default" href="#">
-                            销量
-                              <i class="glyphicon glyphicon-arrow-up"></i>
-                        </a>
-                        <a class="btn-default" href="#">
-                            好评
-                              <i class="glyphicon glyphicon-arrow-up"></i>
-                         </a>
-                         <a class="btn-default" href="#">
-                            最新
-                         </a>
-                    </div>
-                    <div class="arrow">
-                        <div class="btn-group btn-sm goodsnum-page">
-                            <span class="red current">1</span>/<span class="total">1</span>
-                          </div>
-                      <div class="btn-group btn-sm page-change">
-                                                      </div>
+
+            <div class="goods-list margin">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="form-inline" role="search">
+                            <div class="btn-group order-btn btn-sm onc" role="group" aria-label="...">
+                                <a class="btn-default defaultBtn" href="#">
+                                    默认
+                                </a>
+                                <a class="iconChange btn-default" href="#">价格
+                                    <span><i class="glyphicon glyphicon-triangle-top btn-xs"></i><i
+                                            class="glyphicon glyphicon-triangle-bottom btn-xs"></i></span>
+                                </a>
+
+                                <a class="btn-default" href="#">
+                                    销量
+                                    <i class="glyphicon glyphicon-arrow-up"></i>
+                                </a>
+                                <a class="btn-default" href="#">
+                                    好评
+                                    <i class="glyphicon glyphicon-arrow-up"></i>
+                                </a>
+                                <a class="btn-default" href="#">
+                                    最新
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <div class="btn-group btn-sm goodsnum-page">
+                                    <!-- <span ><a href="car.html" class="red current" style="text-align: inherit;font-size:18px;">去结算</a></span> -->
+
+                                </div>
+                                <div class="btn-group btn-sm page-change">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-          </div>
-      </div>
 
 
 
-</div>
-<script>
-$('.onc a').mousedown(function(){
-    $(this).addClass('defaultBtn').siblings().removeClass('defaultBtn');
-});
-</script>
+            </div>
+            <script>
+                $('.onc a').mousedown(function () {
+                    $(this).addClass('defaultBtn').siblings().removeClass('defaultBtn');
+                });
+            </script>
 
-</div>
+
+
+
+
+            <section class="box3 margin row goods-list gl-default">
+                <p>商品卖完了.....</p>
+
+                <div class="col-xs-7" style="position: relative; margin-left: 0px;">
+
+
+                    <!-- <div class="goods col-xs-7" style="position: relative; margin-left: 0px;">
+
+            <img src="images/1.jpg" alt="">
+             
+            <p>名字</p>
+           
+            <em class="figure-title figureColor">评价</em>
+            <span class="span2">价格</span>
+            <i class="i2">加入购物车</i>
+        </div> -->
+                </div>
+            </section>
+
+
+        </div>
     </section>
 
+    <footer>
+            <div class="footer-t margin clear ">
+                <ul class="clear">
+                    <li>
+                    <div class="left">
+                        <img src="https://www.konka.com/public/images/29/72/32/508be9abdf01173241a65b671c4ec6fff242e359.png?72574_OW29_OH29">
+                    </div>
+                    <div class="foo-title">
+                        <h4>全场包邮</h4>
+                        <h6>全场商品免费送到家</h6>
+                    </div>
+                </li>
+                     <li>
+                    <div class="left">
+                        <img src="https://www.konka.com/public/images/8e/e7/58/dda3bbcea1734e9cc57f733bd39c7bdfa8a098c9.png?72590_OW23_OH24">
+                    </div>
+                    <div class="foo-title">
+                        <h4>质量保证</h4>
+                        <small>享受国家三包政策</small>
+                    </div>
+                </li> 
+                     <li>
+                    <div class="left">
+                        <img src="https://www.konka.com/public/images/0a/f6/6b/fa606e57f51c1c20bee1b08b460b546a2308535a.png?72616_OW24_OH24">
+                    </div>
+                    <div class="foo-title">
+                        <h4>权益保障</h4>
+                        <small>7天包退15天包换</small>
+                    </div>
+                </li>
+                    <li>
+                    <div class="left">
+                        <img src="https://www.konka.com/public/images/18/f6/51/e7f1acfff43fd63737b75f9dd040c04875dbef80.png?72627_OW24_OH24">
+                    </div>
+                    <div class="foo-title">
+                        <h4>放心服务</h4>
+                        <small>24小时内上门服务</small>
+                    </div>
+                </li>
+                    <li>
+                    <div class="left">
+                        <img src="https://www.konka.com/public/images/e1/df/92/2304a231ed8691bc454c367e282052810d5634d0.png?72639_OW25_OH25">
+                    </div>
+                    <div class="foo-title">
+                        <h4>意外惊喜</h4>
+                        <small>限时打折优惠不断</small>
+                    </div>
+                </li> 
+                </ul>
+            
+            </div>
+            
+            <div class="footer-c margin clear">
+                <div class="footer-c-l" >
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="#" target="_blank">购买指南</a></dd>
+                    <dd><a href="#" target="_blank">支付方式</a></dd>
+                    <dd><a href="#" target="_blank">配送方式</a></dd>
+                    <dd><a href="#" target="_blank">售后政策</a></dd>
+                    <dd><a href="#" target="_blank">防伪查询</a></dd>
+                    
+                </dl>
+                <dl>
+                    <dt>新闻中心</dt>
+                    <dd><a href="#" target="_blank">集团新闻</a></dd>
+                    <dd><a href="#" target="_blank">媒体报道</a></dd>
+                    
+                </dl>
+                <dl>
+                    <dt>投资者关系</dt>
+                    <dd><a href="#" target="_blank">公司概要</a></dd>
+                    <dd><a href="#" target="_blank">高管团队</a></dd>
+            
+                    <dd><a href="#" target="_blank">最新公告</a></dd>
+                    <dd><a href="#" target="_blank">公司治理</a></dd>
+                    
+                </dl>
+                <dl>
+                    <dt>集团成员网站</dt>
+                    <dd><a href="#" target="_blank">华侨城集团</a></dd>
+                    <dd><a href="#" target="_blank">康佳全球服务中心</a></dd>
+                    <dd><a href="#" target="_blank">康佳国际营销</a></dd>
+                    <dd><a href="#" target="_blank">康佳移动互联科技</a></dd>
+                    <dd><a href="#" target="_blank">康佳壹视界商业显示</a></dd>
+                    <dd><a href="#" target="_blank">康佳智能电器</a></dd>
+                
+                    
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="#" target="_blank">了解康佳</a></dd>
+                    <dd><a href="#" target="_blank">加入康佳</a></dd>
+                    <dd><a href="#" target="_blank">校园招聘</a></dd>
+                    <dd><a href="#" target="_blank">联系我们</a></dd>
+                    
+                </dl>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="#" target="_blank">官方微博</a></dd>
+                    <dd class="showCode"><a href="#">官方微信</a>
+                        <div class="code">
+                            <img src="https://www.konka.com/themes/pc/konka/images/ewm.jpg?v16d2" alt="">
+                        </div>
+                    </dd>
+                
+                    <dd><a href="#" target="_blank">官方社区</a></dd>
+                    <dd class="showCode"><a href="#">K迷俱乐部</a>
+                        <div class="code">
+                            <img src="https://www.konka.com/themes/pc/konka/images/km.jpg?v16d2" alt="">
+                        </div>
+                    </dd>
+                    <dd class="showCode"><a href="#">康佳微商城</a>
+                        <div class="code">
+                            <img src="https://www.konka.com/themes/pc/konka/images/wsc.jpg?v16d2" alt="">
+                        </div>
+                    </dd>
+                    <dd class="showCode"><a href="#">康佳服务</a>
+                        <div class="code">
+                            <img src="https://www.konka.com/themes/pc/konka/images/kafu.jpg?v16d2" alt="">
+                        </div>
+                    </dd>
+                    <dd><a href="#" target="_blank">腾讯视频TV端</a></dd>
+                   
+                </dl>
+            </div>
+                <div class="footer-c-r">
+                    <p >24小时全国服务热线</p>
+                    <h4>400-880-0016</h4>
+                    <a href="#" target="_blank">
+                        <span>购买咨询</span>
+                    </a> 
+                    
+                    <a style="margin-left: 10px;" target="_blank" href="#">
+                        <span>售后服务</span>
+                    </a>
+                </div>
+            </div>
+                
+            
+            <div class="footer-b clear">
+            
+                    <div class="logo">
+                            <img src="https://www.konka.com/themes/pc/konka/images/konka.png?v16d2" alt="">
+                        </div>
+                        <div class="link">
+                                <p>Copyright © 1980-2019 康佳集团股份有限公司 版权所有</p>
+                                <span>|</span><a href="#">联系我们</a>
+                                <span>|</span><a href="#">法律声明</a>
+                                <span>|</span><a href="#">隐私保护</a>
+                                <span>|</span><a href="#">快递查询</a>
+                                <span>|</span><a href="#">腾讯视频TV端</a>
+                                <span>|</span><a href="#" target="_blank">粤ICP备 05059413</a>
+                            </div>
+            </div>
+            </footer>
+            <div id="last">
+                    
+                <a href="https://credit.szfw.org/CX20160830025087000485.html" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert3.png?v16d2" alt=""></a>
+                 <a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.konka.com&amp;at=official" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert2.png?v16d2" alt=""></a>
+                   <a href="http://szcert.ebs.org.cn/1db11754-da73-4970-aa65-a587139e866e" target="_blank"><img src="https://www.konka.com/themes/pc/konka/images/cert.gif?v16d2" alt=""></a>
+             
+            
+            
+            </div>
 
 
 
 </body>
+<script src="js/ajax.2.0.js"></script>
+<script>
+    class List {
+        constructor() {
+            this.url = "http://localhost/1907/shopping/data/goods.json";
+            this.box = document.querySelector(".box3");
+
+            this.load();
+            // 1.准备绑定点击事件
+            this.addEvent();
+        }
+        load() {
+            var that = this;
+            ajax({
+                url: this.url,
+                success: function (res) {
+                    that.res = JSON.parse(res)
+                    that.display();
+                }
+            })
+        }
+        display() {
+            // console.log(this.res);
+            var str = "";
+            for (var i = 0; i < this.res.length; i++) {
+                str += `<div class="goods" index="${this.res[i].goodsId}">
+                            <img src="${this.res[i].url}" alt="">
+                            <p>${this.res[i].name}</p>
+                            
+                            <em>${this.res[i].tip}</em>
+                            <span>${this.res[i].price}</span>
+                            <i class="btn">加入购物车</i>
+                        </div>`
+            }
+            this.box.innerHTML = str;
+        }
+        addEvent() {
+            var that = this;
+            this.box.addEventListener("click", function (eve) {
+                var e = eve || window.event;
+                var target = e.target || e.srcElement;
+                if (target.className == "btn") {
+                    // 2.提前找到点击商品的唯一的id
+                    that.id = target.parentNode.getAttribute("index");
+                    // 3.准备存储localstorage
+                    that.setLocal();
+                }
+            })
+        }
+        setLocal() {
+
+            // 数据的格式：[{id:,num:,},{},{}]
+            // 先读
+            this.goods = localStorage.getItem("goods") ? JSON.parse(localStorage.getItem("goods")) : [];
+
+            if (this.goods.length < 1) {
+                // 第一次存，直接存
+                this.goods.push({
+                    id: this.id,
+                    num: 1
+                })
+            } else {
+                // 准备存重复数据的索引
+                var i;
+                // 利用some遍历数组，检测是否有重复数据
+                var o = this.goods.some((val, index) => {
+                    // 每次将索引，保存出来，
+                    i = index;
+                    // 如果id重复了，返回true，同时some自动停止
+                    return val.id == this.id;
+                })
+                // 如果some的返回值为true，表示肯定有一个值为true，那么表示有重复
+                if (o) {
+                    this.goods[i].num++
+                } else { //否则没有重复，再新增数据
+                    this.goods.push({
+                        id: this.id,
+                        num: 1
+                    })
+                }
+                // var onoff = true;
+                // for(var i=0;i<this.goods.length;i++){
+                //     if(this.goods[i].id === this.id){
+                //         // 存老的，老数据+1
+                //         this.goods[i].num ++;
+                //         onoff = false;
+                //     }
+                // }
+                // if(onoff){
+                //     // 存新的，增加新数据
+                //     this.goods.push({
+                //         id:this.id,
+                //         num:1
+                //     })
+                // }
+            }
+
+            localStorage.setItem("goods", JSON.stringify(this.goods));
+        }
+    }
+
+    new List();
+</script>
+
+
+
 <script src="../jq/jquery.js"></script>
 <script src="../libs/bootstrap.js"></script>
 <script src="../jq/search.js"></script>

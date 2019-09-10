@@ -299,8 +299,8 @@ body {
 }
 
 #product .product-container .product-page .row .col-xs-5 .product-page-cart .spinner-input {
-    height: 25px;
-    width: 70px;
+    height: 30px;
+    width: 150px;
     border: 1px solid #ddd;
     margin-top: -2px;
     outline: 0;
@@ -313,7 +313,7 @@ body {
     margin-bottom: 30px
 }
 
-#product .product-container .product-page .row .col-xs-5 .product-page-cart .product-quantity button {
+/* #product .product-container .product-page .row .col-xs-5 .product-page-cart .product-quantity button {
     margin-right: -1px;
     padding: 0;
     width: 25px;
@@ -329,7 +329,7 @@ body {
 
 #product .product-container .product-page .row .col-xs-5 .product-page-cart .product-quantity button:last-child {
     margin-left: -1px
-}
+} */
 
 #product .product-container .product-page .row .col-xs-5 .product-page-cart .row {
     padding: 15px 0

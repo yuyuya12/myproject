@@ -1,161 +1,273 @@
 #main-product {
-    padding-top: 50px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  #main-product  .glist-container .breadcrumb {
-    margin-bottom: 10px;
-    padding: 0;
-    background: none !important;
-  }
-  #main-product  .glist-container .breadcrumb li {
-    display: inline-block;
-  }
-  #main-product .glist-container .breadcrumb li a {
-    font-size: 14px;
-    color: #333;
-  }
-  #main-product .glist-container .breadcrumb li .glyphicon {
-    font-size: 12px;
-    margin-left: 5px;
-  }
-  #main-product  .glist-container .breadcrumb > li + li:before {
-    content: ">\00a0";
-  }
-  #main-product .glist-container .panel-body {
-    padding: 0;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dt {
-    width: 85px;
-    height: 40px;
-    text-align: left;
-    padding: 0 0 0 15px;
-    line-height: 40px;
-    background: #eee;
-    border-bottom: 1px solid #e0e0e0;
-    font-weight: 600;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dt:last-child {
-    border-bottom: 0;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd {
-    margin-left: 0px;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #f0f0f0;
-    overflow: hidden;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd li {
-    display: inline-block;
-    margin-left: 35px;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd li a {
-    color: #333;
-    padding: 0;
-    border: 0;
-    display: inline;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd li a:hover {
-    color: #ed1c24;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd li .active {
-    background: #ed1c24;
-    color: #fff;
-    padding: 0 5px;
-    border-radius: 5px;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd li .active:hover {
-    color: #fff;
-  }
-  #main-product .glist-container .panel-body .gfilter-list dd:last-child {
-    border-bottom: 0;
-  }
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#main-product .glist-container .breadcrumb {
+  margin-bottom: 10px;
+  padding: 0;
+  background: none !important;
+}
+
+#main-product .glist-container .breadcrumb li {
+  display: inline-block;
+}
+
+#main-product .glist-container .breadcrumb li a {
+  font-size: 14px;
+  color: #333;
+}
+
+#main-product .glist-container .breadcrumb li .glyphicon {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#main-product .glist-container .breadcrumb>li+li:before {
+  content: ">\00a0";
+}
+
+#main-product .glist-container .panel-body {
+  padding: 0;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dt {
+  width: 85px;
+  height: 40px;
+  text-align: left;
+  padding: 0 0 0 15px;
+  line-height: 40px;
+  background: #eee;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dt:last-child {
+  border-bottom: 0;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd {
+  margin-left: 0px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd li a {
+  color: #333;
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd li a:hover {
+  color: #ed1c24;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd li .active {
+  background: #ed1c24;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd li .active:hover {
+  color: #fff;
+}
+
+#main-product .glist-container .panel-body .gfilter-list dd:last-child {
+  border-bottom: 0;
+}
 
 
-  #main-product  .glist-container .goods-list .panel-default {
-    height: 40px;
-    border: 0;
-    box-shadow: none;
-  }
-  #main-product .glist-container .goods-list .panel-default .panel-heading {
-    padding: 0;
-    border: 0;
-    background: #eee;
-    height: 40px;
-    box-sizing: border-box;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline {
-    height: 40px;
-    position: relative;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group {
-    padding: 0;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange {
-    position: relative;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span {
-    height: 30px;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span i {
-    position: absolute;
-    color: #000;
-    right: 8px;
-  }
-  #main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span i:hover {
-    color: #da2a2a;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span .glyphicon-triangle-top {
-    top: 4px;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span .glyphicon-triangle-bottom {
-    position: absolute;
-    bottom: 0;
-    top: 14px;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group a {
-    display: inline-block;
-    text-align: center;
-    background: none;
-    width: 80px;
-    line-height: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group a i {
-    font-size: 12px;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .defaultBtn {
-    border-top: 2px solid #da2a2a;
-    color: #da2a2a;
-    box-sizing: border-box;
-    background: #fff;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow {
-    width: 80px;
-    position: absolute;
-    top: 8px;
-    right: 0;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .goodsnum-page span {
-    margin: 0 2px;
-  }
-  .container.main-container .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .goodsnum-page .current {
-    color: #da2a2a;
-  }
-  #main-product  .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change {
-    height: 20px;
-    box-sizing: border-box;
-  }
-  #main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change span {
-    box-sizing: border-box;
-  }
-  #main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change span a {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    border: 1px solid #d3d3d3;
-    background: #fff;
-    font-size: 12px;
-    border-radius: 2px;
-  }
+#main-product .glist-container .goods-list .panel-default {
+  height: 40px;
+  border: 0;
+  box-shadow: none;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading {
+  padding: 0;
+  border: 0;
+  background: #eee;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline {
+  height: 40px;
+  position: relative;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group {
+  padding: 0;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange {
+  position: relative;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span {
+  height: 30px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span i {
+  position: absolute;
+  color: #000;
+  right: 8px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span i:hover {
+  color: #da2a2a;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span .glyphicon-triangle-top {
+  top: 4px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .iconChange span .glyphicon-triangle-bottom {
+  position: absolute;
+  bottom: 0;
+  top: 14px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group a {
+  display: inline-block;
+  text-align: center;
+  background: none;
+  width: 80px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group a i {
+  font-size: 12px;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .btn-group .defaultBtn {
+  border-top: 2px solid #da2a2a;
+  color: #da2a2a;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow {
+  width: 80px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .goodsnum-page span {
+  margin: 0 2px;
+}
+
+.container.main-container .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .goodsnum-page .current {
+  color: #da2a2a;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change {
+  height: 20px;
+  box-sizing: border-box;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change span {
+  box-sizing: border-box;
+}
+
+#main-product .glist-container .goods-list .panel-default .panel-heading .form-inline .arrow .page-change span a {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+
+
+
+
+#main-product .glist-container .goods-list .gl-default {
+  margin: 0;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 {
+  background: #fff;
+  padding: 10px;
+  height: 340px;
+  width: 270px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure {
+  height: 200px;
+  width: 100%;
+  line-height: 200px;
+  font-size: 0;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure a {
+  margin-bottom: 30px;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+
+
+
+
+#main-product .glist-container .goods-list .gl-default {
+  margin: 0;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 {
+  background: #fff;
+  padding: 10px;
+  height: 340px;
+  width: 270px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure {
+  height: 200px;
+  width: 100%;
+  line-height: 200px;
+  font-size: 0;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure a {
+  margin-bottom: 30px;
+}
+
+#main-product .glist-container .goods-list .gl-default .col-xs-3 .figure a img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
