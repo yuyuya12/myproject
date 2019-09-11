@@ -1,5 +1,5 @@
          //类别评论
-      
+         
          $('.col-xs-4').hover(function () {
              var satisShow = $(this).find('.text-left').find('.satis-show').html();
              if (satisShow == "" || satisShow == null) {
