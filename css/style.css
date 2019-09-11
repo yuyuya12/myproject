@@ -72,12 +72,12 @@ body {
 #top .top-r .car {
     display: inline-block;
     margin-left: 15px;
-    background-color: #424242;
-    padding: 0 19px;
+    background: #000;
+    padding: 0 15px;
 }
 
 #top .top-r .cart a .img {
-    width: 20px;
+    width: 19px;
     top: -3px;
     position: relative;
     vertical-align: middle;
@@ -222,26 +222,7 @@ nav .nav-top ul li .item-show {
     position: relative;
 }
 
-/* 轮播图 */
-/* #banner .lunbo {
-    position: absolute;
-    overflow: hidden;
-    height: 500px;
-    width: 1240px;
-    margin: 0 auto;
-}
 
-#banner .lunbo .item {
-    width: 1240px;
-    position: absolute;
-    left: 1240px;
-    width: 100%;
-
-}
-
-#banner .lunbo .te {
-    left: 0;
-} */
 
 .box{width:1260px;height:500px;margin: auto;position: absolute;;overflow: hidden}
 .imgbox{width:1260px;height:500px;}
@@ -298,55 +279,6 @@ nav .nav-top ul li .item-show {
     background: red;
 }
 
-/* 
-.index-banner .banner-category {
-    height: 500px;
-    position: relative
-}
-
-.index-banner .banner-category .category-wrapper {
-    width: 234px;
-    position: relative;
-    z-index: 2;
-    height: 500px
-}
-
-.index-banner .banner-con {
-    height: 500px;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-.index-banner .site-category-list {
-    background: rgba(0, 0, 0, .6);
-    height: 100%;
-    border: 0;
-    color: #fff;
-    margin: 0;
-    padding: 25px 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-} */
-
-/* .index-banner .site-category-list .category-item .title {
-    position: relative;
-    display: block;
-    padding-left: 30px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff
-}
-
-.index-banner .site-category-list .category-item .title i {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 16px;
-    line-height: 16px
-} */
 
 #banner .container .banner-nav ul li .children {
     display: none;
@@ -563,6 +495,16 @@ nav .nav-top ul li .item-show {
     height: 340px;
     padding: 25px 10px 10px;
     box-sizing: border-box;
+
+
+
+}
+
+.star-bottom .col-xs-4:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    z-index: 2;
+    transition: all .5s;
+    transform: translate3d(0, -2px, 0);
 }
 
 .col-xs-4 .figure {

@@ -47,7 +47,7 @@
                         <!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
                         <img class="top-header-cart"
                             src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?vee99">
-                        购物车<span ><a href="car.html" class="red current" style="font-size:15px;color:red">(去结算)</a></span>
+                        购物车<span ><a href="../shopping/car.html" class="red current" style="font-size:15px;color:red">(去结算)</a></span>
                         <span class="sp-num" style="display:none"></span>
                     </a>
                 </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="nav-block">
                 <ul class="ul">
-                    <li><a href="#">首页</a>
+                    <li><a href="../KONKA/index.html">首页</a>
                     </li>
                     <li class="l1"><a href="#">电视</a>
                         <div class="item">
@@ -656,7 +656,7 @@
 
         <div class="product-container margin">
             <ol class="breadcrumb">
-                <li><a href="#">K迷优品</a></li>
+                <li><a href="../shopping/k-product.html">K迷优品</a></li>
                 <li><a href="#">生活萌物</a></li>
                 <li class="active">SUPER KIMI“猪”事大吉毛绒公仔&nbsp;SUPER KIMI“猪”事大吉毛绒公仔</li>
             </ol>
@@ -689,26 +689,26 @@
                         <div class="updown">
                             <div class="box">
                                 <ul class="product-other-images list-inline">
-                                    <li class="current">
-                                        <a href="#" target="_blank">
+                                    <li class="current l6">
+                                        <a href="https://www.konka.com/public/images/b1/42/f4/18f94b299d89527b7a4a4000e55f482eb76ff5f7.jpg?95930_OW800_OH800" target="_blank">
                                             <img
                                                 src="https://www.konka.com/public/images/b1/42/f4/18f94b299d89527b7a4a4000e55f482eb76ff5f7.jpg?95930_OW800_OH800">
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="#" target="_blank">
+                                    <li class="l6">
+                                        <a href="https://www.konka.com/public/images/70/1a/dd/6629f1a5cbad24516beb19ad7e69e8e2026a490c.jpg?95930_OW800_OH800" target="_blank">
                                             <img
                                                 src="https://www.konka.com/public/images/70/1a/dd/6629f1a5cbad24516beb19ad7e69e8e2026a490c.jpg?95930_OW800_OH800">
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="#" target="_blank">
+                                    <li class="l6" >
+                                        <a href="https://www.konka.com/public/images/81/c8/bc/fc739b65ce2a15815a369141ceb1e24a63048a7d.jpg?95929_OW800_OH800" target="_blank">
                                             <img
                                                 src="https://www.konka.com/public/images/81/c8/bc/fc739b65ce2a15815a369141ceb1e24a63048a7d.jpg?95929_OW800_OH800">
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="#" target="_blank">
+                                    <li class="l6">
+                                        <a href="https://www.konka.com/public/images/24/64/45/c2f3ac0d80134dd73846e9ecb64d01320651d555.jpg?95929_OW800_OH800" target="_blank">
                                             <img
                                                 src="https://www.konka.com/public/images/24/64/45/c2f3ac0d80134dd73846e9ecb64d01320651d555.jpg?95929_OW800_OH800">
                                         </a>
@@ -959,11 +959,19 @@
         </div>
 
 </body>
+<script>
+$('.product-other-images .l6').hover(function(){
+    $(this).addClass('current').siblings().removeClass('current');
+   
+});
 
+
+
+</script>
 <script src="../jq/jquery.js"></script>
 <script src="../libs/bootstrap.js"></script>
 <script src="../jq/search.js"></script>
 <script src="../jq/nav-top.js"></script>
 <script src="../jq/nav-er.js"></script>
-<script src="../jq/big.js"></script>
+<!-- <script src="../jq/big.js"></script> -->
 </html>

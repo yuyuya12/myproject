@@ -101,68 +101,69 @@
 
 
         </div>
-        <div class="top-r">
-            <p class="p1">
-            <a href="C:\phpStudy\PHPTutorial\WWW\1907\project\KONKA\denglu.html">登录</a>
+        <div class="top-r" style="width: 300px; position:relative" >
+            <div style="width: 170px; display:inline-block" >
+            <p class="p1" >
+            <a href="denglu.html">登录</a>
             <span>|</span>
-            <a href="C:\phpStudy\PHPTutorial\WWW\1907\project\KONKA\zhuce.html">注册</a>
+            <a href="zhuce.html">注册</a>
             <span>|</span>
             </p>
-            <p class="p2">欢迎<span></span>进入本网站 <em>退出</em></p>
+            <p class="p2" style="color:lavender">欢迎<span style="color:lightpink; font-size:14px;"></span>进入本网站 <em>退出</em></p>
+        </div>
 
-
-            <div class="car">
-                <a href="#" class="iconImg">
+            <div class="car" style="position:absolute ;right:-5px; background:#000;">
+                <a href="#" class="iconImg" >
                     <!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
                     <img class="top-header-cart"
                         src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?vee99">
-                    购物车<span ><a href="car.html" class="red current" style="font-size:15px;color:red">(去结算)</a></span>
+                    购物车<span ><a href="../shopping/car.html" class="red current" style="font-size:15px;color:red">(去结算)</a></span>
                     <span class="sp-num" style="display:none"></span>
                 </a>
             </div>
         </div>
 <script>
-        class Index{
-            constructor(){
-                this.p1 = document.querySelector(".p1")
-                this.p2 = document.querySelector(".p2")
-                this.span = document.querySelector(".p2 span")
-                this.em = document.querySelector(".p2 em")
+        // class Index{
+        //     constructor(){
+        //         this.p1 = document.querySelector(".p1")
+        //         this.p2 = document.querySelector(".p2")
+        //         this.span = document.querySelector(".p2 span")
+        //         this.em = document.querySelector(".p2 em")
     
-                this.getLocal();
-                this.login();
-                this.addEvent();
-            }
-            getLocal(){
-                // 之前有没有
-                this.userMsg = localStorage.getItem("userMsg");
-                this.userMsg = this.userMsg ? JSON.parse(this.userMsg) : [];
-            }
-            login(){
-                this.i = 0;
-                var o = this.userMsg.some((val,index)=>{
-                    this.i = index;
-                    return val.onoff == 1;
-                })
-                if(o){
-                    this.p1.style.display = "none";
-                    this.p2.style.display = "block";
-                    this.span.innerHTML = this.userMsg[this.i].user;
-                }
-            }
-            addEvent(){
-                var that = this;
-                this.em.onclick = function(){
-                    that.userMsg[that.i].onoff = 0;
-                    localStorage.setItem("userMsg",JSON.stringify(that.userMsg));
-                    that.p1.style.display = "block";
-                    that.p2.style.display = "none";
-                    that.span.innerHTML = "";
-                }
-            }
-        }
+        //         this.getLocal();
+        //         this.login();
+        //         this.addEvent();
+        //     }
+        //     getLocal(){
+        //         // 之前有没有
+        //         this.userMsg = localStorage.getItem("userMsg");
+        //         this.userMsg = this.userMsg ? JSON.parse(this.userMsg) : [];
+        //     }
+        //     login(){
+        //         this.i = 0;
+        //         var o = this.userMsg.some((val,index)=>{
+        //             this.i = index;
+        //             return val.onoff == 1;
+        //         })
+        //         if(o){
+        //             this.p1.style.display = "none";
+        //             this.p2.style.display = "block";
+        //             this.span.innerHTML = this.userMsg[this.i].user;
+        //         }
+        //     }
+        //     addEvent(){
+        //         var that = this;
+        //         this.em.onclick = function(){
+        //             that.userMsg[that.i].onoff = 0;
+        //             localStorage.setItem("userMsg",JSON.stringify(that.userMsg));
+        //             that.p1.style.display = "block";
+        //             that.p2.style.display = "none";
+        //             that.span.innerHTML = "";
+        //         }
+        //     }
+        // }
     
-        new Index();
+        // new Index();
 
     </script>
 
@@ -530,7 +531,7 @@
                 
             <div class="col-xs-2">
                         <div class="figure">
-                            <a href="/KRC-12JX701.html" title="">
+                            <a href="#" title="">
                                 <img src="https://www.konka.com/public/images/af/57/f5/ea5807d6a55b05beed62d1411c02f39e7f694629.jpg?17757_OW800_OH800">
                             </a>
                         </div>
@@ -607,7 +608,7 @@
                                 </div>
             </div>
                 </li>
-                <li class="l1"><a href="D:\千锋二阶段\project\KONKA\k-product.html">K迷优品</a>
+                <li class="l1"><a href="k-product.html">K迷优品</a>
                 
                     <div class="item">
                             <div class="item-children">
@@ -1133,9 +1134,9 @@
         </a>
     </li>
         <li>
-    <a href="list.html?cat_id=155" title="智能摄像头" class="link" target="_blank" rel="nofollow noopener noreferrer">
-        <img class="layz banW" data-original="https://www.konka.com/public/images/90/8a/cc/294ef3cab42c8ff5e547f6466cf3eaf027a743f0.png?26241_OW40_OH40" width="40" height="40" src="https://www.konka.com/public/images/90/8a/cc/294ef3cab42c8ff5e547f6466cf3eaf027a743f0.png?26241_OW40_OH40" style="display: inline;">
-        <span>智能摄像头</span>
+                <a href="https://www.konka.com/list.html?cat_id=31" title="生活萌物" class="link" target="_blank" rel="nofollow noopener noreferrer">
+                    <img class="layz banW" data-original="https://www.konka.com/public/images/e1/9f/26/7e8df4fe0de794fdbeadc5b7cb9f7ed8a657c045.png?26611_OW40_OH40" width="40" height="40" src="https://www.konka.com/public/images/e1/9f/26/7e8df4fe0de794fdbeadc5b7cb9f7ed8a657c045.png?26611_OW40_OH40" style="display: inline;">
+                    <span>生活萌物</span>
         </a>
     </li>
         <li>
@@ -1144,6 +1145,12 @@
         <span>智能微投</span>
         </a>
     </li>
+    <li>
+            <a href="https://www.konka.com/list.html?cat_id=148" title="办公好物" class="link" target="_blank" rel="nofollow noopener noreferrer">
+                <img class="layz banW" data-original="https://www.konka.com/public/images/fa/a3/e3/9d3510f5241bf6a74d465762ba31f4756a25d8e7.png?26615_OW40_OH40" width="40" height="40" src="https://www.konka.com/public/images/fa/a3/e3/9d3510f5241bf6a74d465762ba31f4756a25d8e7.png?26615_OW40_OH40" style="display: inline;">
+                <span>办公好物</span>
+                </a>
+            </li>
     </ul>
                                 </div>
                             </div>
@@ -2370,5 +2377,5 @@
     <script src="../jq/img-commen.js"></script>
     <script src="../jq/nav-er.js"></script>
     <script src="../jq/banner-nav.js"></script>
-
+    <script src="../jq/index-login.js"></script>
     </html>
